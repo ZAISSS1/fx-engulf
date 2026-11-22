@@ -1,0 +1,32 @@
+{
+ "updated": "2026-11-23 01:24",
+ "utc": "2026-11-22 17:23",
+ "symbols": 23,
+ "mt4": 0,
+ "fallback": [
+  "EURUSD",
+  "GBPUSD",
+  "AUDUSD",
+  "NZDUSD",
+  "USDCAD",
+  "USDJPY",
+  "USDCHF",
+  "EURJPY",
+  "GBPJPY",
+  "AUDJPY",
+  "CADJPY",
+  "AUDCHF",
+  "EURAUD",
+  "XAUUSD",
+  "XAGUSD",
+  "US500",
+  "USTEC",
+  "DE30",
+  "JP225",
+  "HK50",
+  "USOIL",
+  "BTCUSD",
+  "ETHUSD"
+ ],
+ "new": 68
+}
