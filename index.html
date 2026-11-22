@@ -78,13 +78,16 @@ input[type=search]{font:inherit;flex:1;min-width:140px;max-width:240px;border:1p
 .tags{font-size:12.5px;color:var(--sub);margin-top:4px}
 .up{color:var(--up);font-weight:800} .down{color:var(--down);font-weight:800}
 .time{font-size:12px;color:var(--sub);font-variant-numeric:tabular-nums;white-space:nowrap}
-.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:var(--soft);border-radius:14px;padding:10px 12px}
+.slbox span{display:block;font-size:12px;color:var(--sub)}
+.slbox b{display:block;font-size:28px;font-weight:900;letter-spacing:-.01em;line-height:1.15;font-variant-numeric:tabular-nums}
+.slbox small{font-size:12.5px;color:var(--sub)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--soft);border-radius:14px;padding:9px 12px;text-align:center}
 .nums div span{display:block;font-size:11px;color:var(--sub)}
 .nums div b{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
 .lots{display:flex;gap:6px}
-.lot{flex:1;border:1px solid var(--line);border-radius:12px;padding:7px 8px;text-align:center}
+.lot{flex:1;border:1px solid var(--line);border-radius:12px;padding:8px 6px;text-align:center}
 .lot span{display:block;font-size:11px;color:var(--sub)}
-.lot b{font-size:15px;font-variant-numeric:tabular-nums}
+.lot b{display:block;font-size:24px;font-weight:800;line-height:1.2;font-variant-numeric:tabular-nums}
 .why{font-size:12.5px;color:var(--sub);line-height:1.6}
 .why em{font-style:normal;color:var(--good)} .why i{font-style:normal;color:var(--bad)}
 .ev{font-size:12px;color:var(--warn);background:var(--warn-bg);border-radius:10px;padding:6px 10px}
@@ -152,7 +155,7 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
   <main class="grid" id="grid"></main>
 
   <footer>
-    紅吞噬＝<span class="up">做多</span>、綠吞噬＝<span class="down">放空</span>（全包：實體與高低點都包住前一根）。進場＝收盤價，停損＝吞噬高／低點，停利為 3R／6R 預估。<br>
+    紅吞噬＝<span class="up">做多</span>、綠吞噬＝<span class="down">放空</span>（全包：實體與高低點都包住前一根）。進場＝收盤價，停損＝吞噬高／低點，停利為 3R／6R／10R 預估。<br>
     手數＝願意賠的金額 ÷（停損距離 × 每手價值＋$7 手續費），0.01 手捨去。新聞判斷：美國與德日英澳殖利率利差、美元、VIX、高收益債利差、原油，只用訊號當下已公布的資料。<br>
     回測：順勢策略「不利」組明顯較差，可當避開參考；逆勢策略不適用。新聞判斷的回測是用 H4 做的，H1／D1 只供參考。依回測數字，不保證未來；不是投資建議。
   </footer>
@@ -223,21 +226,22 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 
 function card(s, fresh){
   const good = s.verdict === '有利', d = s.digits;
+  const tp10 = s.tp10 ?? (s.entry + (s.side === '多' ? 1 : -1) * 10 * Math.abs(s.entry - s.sl));
   const lots = Object.entries(s.lots).map(([k, v]) =>
-    `<div class="lot"><span>$${k}</span><b>${v.lot >= 0.01 ? v.lot.toFixed(2) : '—'}</b></div>`).join('');
+    `<div class="lot"><span>賠 $${k}</span><b>${v.lot >= 0.01 ? v.lot.toFixed(2) : '—'}</b><span>${v.lot >= 0.01 ? '手' : '太小'}</span></div>`).join('');
   const why = [s.support.length ? `<em>支持</em>　${esc(s.support.join('、'))}` : '', s.against.length ? `<i>反對</i>　${esc(s.against.join('、'))}` : ''].filter(Boolean).join('<br>');
   return `<article class="card${fresh ? ' fresh' : ''}">
     <div class="top">
       <div><div class="sym">${esc(s.sym)}<span class="tf">${s.tf || 'H4'}</span></div><div class="tags">${s.pattern}・${SIDE[s.side]}・${s.trend}</div></div>
       <div class="time">${s.time.slice(5)} MT4</div>
     </div>
+    <div class="slbox"><span>停損</span><b>${fmt(s.sl, d)}</b><small>距離 ${s.sl_pips} ${(s.sl_unit||'pip')==='pip'?'pip':'點'}・進場 ${fmt(s.entry, d)}</small></div>
+    <div class="lots">${lots}</div>
     <div class="nums">
-      <div><span>進場</span><b>${fmt(s.entry, d)}</b></div>
-      <div><span>停損 ${s.sl_pips}${(s.sl_unit||'pip')==='pip'?'p':'點'}</span><b>${fmt(s.sl, d)}</b></div>
       <div><span>停利 3R</span><b>${fmt(s.tp3, d)}</b></div>
       <div><span>停利 6R</span><b>${fmt(s.tp6, d)}</b></div>
+      <div><span>停利 10R</span><b>${fmt(tp10, d)}</b></div>
     </div>
-    <div class="lots">${lots}</div>
     ${s.cost_note ? `<div class="why">手數${esc(s.cost_note)}</div>` : ''}
     <div class="why">${why || '各因素中性'}</div>
     ${s.events && s.events.length ? `<div class="ev">⚠ ${esc(s.events.join('；'))}</div>` : ''}
