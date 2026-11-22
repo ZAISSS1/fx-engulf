@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>H4 吞噬訊號</title>
-<meta name="description" content="Exness MT4 24 個商品 H4 全包吞噬，訊號出現當下的新聞有利／不利評估，每 4 小時更新。">
+<meta name="description" content="Exness MT4 23 個商品 H4 全包吞噬，訊號出現當下的新聞有利／不利評估，每 4 小時更新。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -173,7 +173,7 @@ async function load(manual){
     $('#sGood').textContent = recent.filter(s => s.verdict === '有利').length;
     $('#sBad').textContent = recent.filter(s => s.verdict === '不利').length;
     $('#sSym').textContent = st.symbols;
-    $('#meta').textContent = `最後更新 ${st.updated}（台灣）・每 4 小時掃描 Exness MT4 24 個商品` + (st.mt4 < st.symbols ? `・${st.symbols - st.mt4} 個用歷史檔` : '');
+    $('#meta').textContent = `最後更新 ${st.updated}（台灣）・每 4 小時掃描 Exness MT4 ${st.symbols} 個商品` + (st.mt4 < st.symbols ? `・${st.symbols - st.mt4} 個用歷史檔` : '');
     render();
     const top = ALL[0];
     if (top && LS.get('seen') !== top.id){
