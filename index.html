@@ -3,52 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>H4 吞噬訊號</title>
-<meta name="description" content="Exness MT4 23 個商品 H4 全包吞噬，訊號出現當下的新聞有利／不利評估，每 4 小時更新。">
+<title>吞噬K線吞噬線工具</title>
+<meta name="description" content="Exness MT4 23 個商品全包吞噬 K 線（H1／H4／D1 可選，預設 H4），訊號出現當下的新聞有利／不利評估，每小時更新。">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="theme-color" content="#111111">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#f6f5f2; --card:#ffffff; --ink:#111111; --sub:#6b6b6b; --line:#e7e5df; --soft:#f1efea;
   --good:#0f7b3f; --good-bg:#e7f5ec; --bad:#b42318; --bad-bg:#fcebe9; --warn:#8a6d00; --warn-bg:#fff6d6;
-  --accent:#111111;
+  --up:#d92d20; --down:#079455;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#0e0e0f; --card:#17171a; --ink:#f2f2f2; --sub:#9a9a9f; --line:#2a2a2f; --soft:#1f1f23;
-    --good:#4ade80; --good-bg:#12301f; --bad:#f87171; --bad-bg:#3a1515; --warn:#facc15; --warn-bg:#3a3110; --accent:#f2f2f2;
+    --good:#4ade80; --good-bg:#12301f; --bad:#f87171; --bad-bg:#3a1515; --warn:#facc15; --warn-bg:#3a3110;
+    --up:#f87171; --down:#4ade80;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0e0e0f; --card:#17171a; --ink:#f2f2f2; --sub:#9a9a9f; --line:#2a2a2f; --soft:#1f1f23;
-  --good:#4ade80; --good-bg:#12301f; --bad:#f87171; --bad-bg:#3a1515; --warn:#facc15; --warn-bg:#3a3110; --accent:#f2f2f2;
+  --good:#4ade80; --good-bg:#12301f; --bad:#f87171; --bad-bg:#3a1515; --warn:#facc15; --warn-bg:#3a3110;
+  --up:#f87171; --down:#4ade80;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1120px;margin:0 auto;padding:40px 16px 64px}
-header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:52px;height:52px;border-radius:14px;flex:none}
 .eyebrow{font-size:12px;letter-spacing:.22em;color:var(--sub);font-weight:600}
-h1{font-size:clamp(30px,5vw,46px);line-height:1.05;margin:8px 0 6px;font-weight:800;letter-spacing:-.02em}
-.meta{color:var(--sub);font-size:14px}
+h1{font-size:clamp(26px,4.6vw,42px);line-height:1.08;margin:4px 0 0;font-weight:900;letter-spacing:-.01em}
+.meta{color:var(--sub);font-size:14px;margin-top:10px}
 .btns{display:flex;gap:8px}
 button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px;border-radius:999px;font-size:13px;font-weight:600;transition:.15s}
 button:hover{border-color:var(--ink)}
+button.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* 商品週期設定 */
+.tfbox{background:var(--card);border:1px solid var(--line);border-radius:20px;margin-bottom:22px;overflow:hidden}
+.tfhead{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;cursor:pointer;user-select:none}
+.tfhead b{font-size:15px}
+.tfhead span{font-size:12.5px;color:var(--sub)}
+.tfhead .arrow{transition:.2s;color:var(--sub)}
+.tfbox.open .arrow{transform:rotate(180deg)}
+.tfbody{display:none;padding:0 18px 18px}
+.tfbox.open .tfbody{display:block}
+.tfgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.tfrow{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:12px;padding:7px 8px 7px 12px}
+.tfrow b{font-size:13px;font-weight:700}
+.pills{display:flex;gap:4px}
+.pill{padding:4px 9px;font-size:12px;border-radius:8px;color:var(--sub);background:transparent}
+.pill.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tfact{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:14px}
+.tfact small{color:var(--sub);font-size:12px;line-height:1.6;flex:1;min-width:220px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
 .stat b{display:block;font-size:26px;font-weight:800;letter-spacing:-.02em}
 .stat span{font-size:12px;color:var(--sub)}
-.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
 .chip{border:1px solid var(--line);background:transparent;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;color:var(--sub)}
 .chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.sep{width:1px;height:22px;background:var(--line);margin:0 2px}
 input[type=search]{font:inherit;flex:1;min-width:140px;max-width:240px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-top:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px;animation:in .35s ease both}
 .card.fresh{box-shadow:0 0 0 2px var(--ink)}
 @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-.sym{font-size:22px;font-weight:800;letter-spacing:-.01em}
-.tags{font-size:12px;color:var(--sub);margin-top:3px}
-.time{font-size:12px;color:var(--sub);font-variant-numeric:tabular-nums}
+.sym{font-size:22px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.tf{font-size:11px;font-weight:700;background:var(--ink);color:var(--bg);border-radius:6px;padding:2px 7px;letter-spacing:.03em}
+.tags{font-size:12.5px;color:var(--sub);margin-top:4px}
+.up{color:var(--up);font-weight:800} .down{color:var(--down);font-weight:800}
+.time{font-size:12px;color:var(--sub);font-variant-numeric:tabular-nums;white-space:nowrap}
 .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;background:var(--soft);border-radius:14px;padding:10px 12px}
 .nums div span{display:block;font-size:11px;color:var(--sub)}
 .nums div b{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
@@ -64,22 +93,42 @@ input[type=search]{font:inherit;flex:1;min-width:140px;max-width:240px;border:1p
 .verdict small{font-weight:600;font-size:12px;opacity:.85}
 .empty{color:var(--sub);text-align:center;padding:60px 0}
 footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:18px}
-@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.wrap{padding-top:28px}}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.wrap{padding-top:28px}.brand img{width:44px;height:44px}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div>
-      <div class="eyebrow">H4 ENGULF WATCH</div>
-      <h1>H4 吞噬訊號</h1>
+      <div class="brand">
+        <img src="icon.svg" alt="">
+        <div>
+          <div class="eyebrow">ENGULF WATCH</div>
+          <h1>吞噬K線吞噬線工具</h1>
+        </div>
+      </div>
       <div class="meta" id="meta">載入中…</div>
     </div>
     <div class="btns">
       <button id="notif">🔔 開啟通知</button>
-      <button id="theme">◐</button>
+      <button id="theme" aria-label="切換深淺色">◐</button>
     </div>
   </header>
+
+  <section class="tfbox" id="tfbox">
+    <div class="tfhead" id="tfhead">
+      <div><b>商品週期</b>　<span id="tfsum">預設全部 H4</span></div>
+      <div class="arrow">▾</div>
+    </div>
+    <div class="tfbody">
+      <div class="tfgrid" id="tfgrid"></div>
+      <div class="tfact">
+        <button class="primary" id="tfsave">儲存設定</button>
+        <button id="tfreset">全部改回 H4</button>
+        <small id="tfnote">點週期就能新增或取消（每個商品可以同時看好幾個週期）。按「儲存設定」會打開 GitHub，再按綠色「Commit changes」，下一次整點掃描就生效。</small>
+      </div>
+    </div>
+  </section>
 
   <section class="stats">
     <div class="stat"><b id="sTotal">–</b><span>近 7 天訊號</span></div>
@@ -88,26 +137,32 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
     <div class="stat"><b id="sSym">–</b><span>監控商品</span></div>
   </section>
 
-  <div class="bar">
+  <div class="bar" id="bar1">
     <button class="chip on" data-f="all">全部</button>
     <button class="chip" data-f="有利">🟢 有利</button>
     <button class="chip" data-f="不利">🔴 不利</button>
     <button class="chip" data-f="順勢">只看順勢</button>
+    <span class="sep"></span>
+    <button class="chip" data-f="多"><span class="up">做多</span></button>
+    <button class="chip" data-f="空"><span class="down">放空</span></button>
     <input type="search" id="q" placeholder="搜尋商品，例如 EURUSD">
   </div>
+  <div class="bar" id="bar2"></div>
 
   <main class="grid" id="grid"></main>
 
   <footer>
-    紅吞噬＝做多、綠吞噬＝做空（全包：實體與高低點都包住前一根）。進場＝收盤價，停損＝吞噬高／低點，停利為 3R／6R 預估。<br>
+    紅吞噬＝<span class="up">做多</span>、綠吞噬＝<span class="down">放空</span>（全包：實體與高低點都包住前一根）。進場＝收盤價，停損＝吞噬高／低點，停利為 3R／6R 預估。<br>
     手數＝願意賠的金額 ÷（停損距離 × 每手價值＋$7 手續費），0.01 手捨去。新聞判斷：美國與德日英澳殖利率利差、美元、VIX、高收益債利差、原油，只用訊號當下已公布的資料。<br>
-    回測：順勢策略「不利」組明顯較差，可當避開參考；逆勢策略不適用。依回測數字，不保證未來；不是投資建議。
+    回測：順勢策略「不利」組明顯較差，可當避開參考；逆勢策略不適用。新聞判斷的回測是用 H4 做的，H1／D1 只供參考。依回測數字，不保證未來；不是投資建議。
   </footer>
 </div>
 
 <script>
 const $ = s => document.querySelector(s);
-let ALL = [], STATUS = {}, F = 'all';
+const REPO = 'ZAISSS1/fx-engulf';
+const SIDE = {'多': '<span class="up">做多</span>', '空': '<span class="down">放空</span>'};
+let ALL = [], STATUS = {}, F = 'all', TFF = 'all', CFG = {tfs: {}, options: ['H1', 'H4', 'D1']}, DRAFT = {};
 const LS = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 
 (function theme(){
@@ -125,11 +180,44 @@ $('#notif').onclick = async () => {
 };
 if ('Notification' in window && Notification.permission === 'granted') $('#notif').textContent = '🔔 通知已開';
 
-document.querySelectorAll('.chip').forEach(c => c.onclick = () => {
-  document.querySelectorAll('.chip').forEach(x => x.classList.remove('on')); c.classList.add('on'); F = c.dataset.f; render();
+$('#bar1').querySelectorAll('.chip').forEach(c => c.onclick = () => {
+  $('#bar1').querySelectorAll('.chip').forEach(x => x.classList.remove('on')); c.classList.add('on'); F = c.dataset.f; render();
 });
 $('#q').oninput = render;
 
+/* ---------- 商品週期 ---------- */
+$('#tfhead').onclick = () => $('#tfbox').classList.toggle('open');
+function tfSummary(t){
+  const c = {}; Object.values(t).forEach(v => v.forEach(x => c[x] = (c[x] || 0) + 1));
+  const n = Object.keys(t).length;
+  const allH4 = Object.values(t).every(v => v.length === 1 && v[0] === 'H4');
+  return allH4 ? `全部 ${n} 個商品都看 H4` : CFG.options.filter(x => c[x]).map(x => `${x} ${c[x]} 個`).join('・');
+}
+function drawTf(){
+  $('#tfgrid').innerHTML = Object.keys(DRAFT).map(sym => `<div class="tfrow"><b>${sym}</b><div class="pills">` +
+    CFG.options.map(tf => `<button class="pill${DRAFT[sym].includes(tf) ? ' on' : ''}" data-s="${sym}" data-t="${tf}">${tf}</button>`).join('') + '</div></div>').join('');
+  $('#tfgrid').querySelectorAll('.pill').forEach(b => b.onclick = () => {
+    const v = DRAFT[b.dataset.s], t = b.dataset.t;
+    DRAFT[b.dataset.s] = v.includes(t) ? v.filter(x => x !== t) : CFG.options.filter(x => v.includes(x) || x === t);
+    drawTf(); markDirty();
+  });
+  $('#tfsum').textContent = '目前：' + tfSummary(CFG.tfs);
+}
+function markDirty(){
+  const dirty = JSON.stringify(DRAFT) !== JSON.stringify(CFG.tfs);
+  $('#tfsave').textContent = dirty ? '儲存設定（有變更）' : '儲存設定';
+}
+$('#tfreset').onclick = () => { Object.keys(DRAFT).forEach(k => DRAFT[k] = ['H4']); drawTf(); markDirty(); };
+$('#tfsave').onclick = () => {
+  if (JSON.stringify(DRAFT) === JSON.stringify(CFG.tfs)) return alert('設定沒有變更');
+  const d = new Date(), p = n => String(n).padStart(2, '0');
+  const name = `settings/tf_${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}.json`;
+  const body = JSON.stringify({tfs: DRAFT}, null, 1);
+  window.open(`https://github.com/${REPO}/new/main?filename=${encodeURIComponent(name)}&value=${encodeURIComponent(body)}`, '_blank');
+  $('#tfnote').textContent = '已打開 GitHub：按綠色「Commit changes」就完成，下一次整點掃描生效（網頁上方「目前」會跟著更新）。';
+};
+
+/* ---------- 訊號卡 ---------- */
 const fmt = (x, d) => Number(x).toFixed(d);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
@@ -140,7 +228,7 @@ function card(s, fresh){
   const why = [s.support.length ? `<em>支持</em>　${esc(s.support.join('、'))}` : '', s.against.length ? `<i>反對</i>　${esc(s.against.join('、'))}` : ''].filter(Boolean).join('<br>');
   return `<article class="card${fresh ? ' fresh' : ''}">
     <div class="top">
-      <div><div class="sym">${esc(s.sym)}</div><div class="tags">${s.pattern}・做${s.side}・${s.trend}</div></div>
+      <div><div class="sym">${esc(s.sym)}<span class="tf">${s.tf || 'H4'}</span></div><div class="tags">${s.pattern}・${SIDE[s.side]}・${s.trend}</div></div>
       <div class="time">${s.time.slice(5)} MT4</div>
     </div>
     <div class="nums">
@@ -157,29 +245,44 @@ function card(s, fresh){
   </article>`;
 }
 
-function render(){
-  const q = $('#q').value.trim().toUpperCase();
-  const rows = ALL.filter(s => (F === 'all' || s.verdict === F || (F === '順勢' && s.trend === '順勢')) && (!q || s.sym.includes(q)));
-  const latest = ALL.length ? ALL[0].time : '';
-  $('#grid').innerHTML = rows.length ? rows.slice(0, 120).map(s => card(s, s.time === latest)).join('') : '<div class="empty">目前沒有符合的訊號</div>';
+function drawTfChips(){
+  const have = CFG.options.filter(t => ALL.some(s => (s.tf || 'H4') === t));
+  if (have.length < 2){ $('#bar2').innerHTML = ''; TFF = 'all'; return; }
+  $('#bar2').innerHTML = ['all', ...have].map(t => `<button class="chip${TFF === t ? ' on' : ''}" data-t="${t}">${t === 'all' ? '全部週期' : t}</button>`).join('');
+  $('#bar2').querySelectorAll('.chip').forEach(c => c.onclick = () => { TFF = c.dataset.t; drawTfChips(); render(); });
 }
 
-async function load(manual){
+function render(){
+  const q = $('#q').value.trim().toUpperCase();
+  const rows = ALL.filter(s => (F === 'all' || s.verdict === F || s.side === F || (F === '順勢' && s.trend === '順勢'))
+    && (TFF === 'all' || (s.tf || 'H4') === TFF) && (!q || s.sym.includes(q)));
+  const latest = ALL.length ? ALL[0].time : '';
+  $('#grid').innerHTML = rows.length ? rows.slice(0, 150).map(s => card(s, s.time === latest)).join('') : '<div class="empty">目前沒有符合的訊號</div>';
+}
+
+async function load(){
   try{
-    const [sig, st] = await Promise.all([fetch('signals.json?' + Date.now()).then(r => r.json()), fetch('status.json?' + Date.now()).then(r => r.json())]);
-    ALL = sig; STATUS = st;
+    const bust = '?' + Date.now();
+    const [sig, st, cfg] = await Promise.all(['signals.json', 'status.json', 'config.json'].map(f => fetch(f + bust).then(r => r.ok ? r.json() : null)));
+    ALL = sig || []; STATUS = st || {};
+    if (cfg && cfg.tfs){
+      const changed = JSON.stringify(cfg.tfs) !== JSON.stringify(CFG.tfs);
+      const untouched = JSON.stringify(DRAFT) === JSON.stringify(CFG.tfs) || !Object.keys(DRAFT).length;
+      CFG = cfg;
+      if (changed && untouched){ DRAFT = JSON.parse(JSON.stringify(cfg.tfs)); drawTf(); markDirty(); }
+    }
     const wk = Date.now() - 7 * 864e5, recent = ALL.filter(s => new Date(s.time.replace(' ', 'T') + 'Z') > wk);
     $('#sTotal').textContent = recent.length;
     $('#sGood').textContent = recent.filter(s => s.verdict === '有利').length;
     $('#sBad').textContent = recent.filter(s => s.verdict === '不利').length;
     $('#sSym').textContent = st.symbols;
-    $('#meta').textContent = `最後更新 ${st.updated}（台灣）・每 4 小時掃描 Exness MT4 ${st.symbols} 個商品` + (st.mt4 < st.symbols ? `・${st.symbols - st.mt4} 個用歷史檔` : '');
-    render();
+    $('#meta').textContent = `最後更新 ${st.updated}（台灣）・每小時掃描 Exness MT4 ${st.symbols} 個商品` + (st.mt4 < st.symbols ? `・${st.symbols - st.mt4} 個用歷史檔` : '');
+    drawTfChips(); render();
     const top = ALL[0];
     if (top && LS.get('seen') !== top.id){
       if (LS.get('seen') && 'Notification' in window && Notification.permission === 'granted'){
         const n = ALL.filter(s => s.time === top.time);
-        new Notification(`H4 吞噬｜${n.length} 筆新訊號`, {body: n.map(s => `${s.sym} 做${s.side} ${s.verdict}`).join('\n'), tag: 'fx-engulf'});
+        new Notification(`吞噬線｜${n.length} 筆新訊號`, {body: n.map(s => `${s.sym} ${s.tf || 'H4'} ${s.side === '多' ? '做多' : '放空'} ${s.verdict}`).join('\n'), tag: 'fx-engulf', icon: 'icon-180.png'});
       }
       LS.set('seen', top.id);
     }

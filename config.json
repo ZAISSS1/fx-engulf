@@ -1,0 +1,78 @@
+{
+ "tfs": {
+  "EURUSD": [
+   "H4"
+  ],
+  "GBPUSD": [
+   "H4"
+  ],
+  "AUDUSD": [
+   "H4"
+  ],
+  "NZDUSD": [
+   "H4"
+  ],
+  "USDCAD": [
+   "H4"
+  ],
+  "USDJPY": [
+   "H4"
+  ],
+  "USDCHF": [
+   "H4"
+  ],
+  "EURJPY": [
+   "H4"
+  ],
+  "GBPJPY": [
+   "H4"
+  ],
+  "AUDJPY": [
+   "H4"
+  ],
+  "CADJPY": [
+   "H4"
+  ],
+  "AUDCHF": [
+   "H4"
+  ],
+  "EURAUD": [
+   "H4"
+  ],
+  "XAUUSD": [
+   "H4"
+  ],
+  "XAGUSD": [
+   "H4"
+  ],
+  "US500": [
+   "H4"
+  ],
+  "USTEC": [
+   "H4"
+  ],
+  "DE30": [
+   "H4"
+  ],
+  "JP225": [
+   "H4"
+  ],
+  "HK50": [
+   "H4"
+  ],
+  "USOIL": [
+   "H4"
+  ],
+  "BTCUSD": [
+   "H4"
+  ],
+  "ETHUSD": [
+   "H4"
+  ]
+ },
+ "options": [
+  "H1",
+  "H4",
+  "D1"
+ ]
+}
