@@ -93,8 +93,36 @@ input[type=search]{font:inherit;flex:1;min-width:140px;max-width:240px;border:1p
 .ev{font-size:12px;color:var(--warn);background:var(--warn-bg);border-radius:10px;padding:6px 10px}
 .verdict{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-radius:14px;padding:11px 14px;font-weight:800;font-size:15px}
 .verdict.good{background:var(--good-bg);color:var(--good)} .verdict.bad{background:var(--bad-bg);color:var(--bad)}
-.verdict small{font-weight:600;font-size:12px;opacity:.85}
+.verdict small{font-weight:600;font-size:12px;display:flex;align-items:center;gap:4px}
+.st{display:inline-block;font-size:12px;font-weight:800;padding:2px 9px;border-radius:999px;line-height:1.4}
+.st::before{content:'強度 ';font-weight:600}
+.st-s{background:#5b21b6;color:#fff} .st-m{background:#f59e0b;color:#1a1200} .st-w{background:#d4d4d8;color:#3f3f46}
+:root[data-theme="dark"] .st-w{background:#3f3f46;color:#d4d4d8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .st-w{background:#3f3f46;color:#d4d4d8}}
+.hrow .st{font-size:11px;padding:1px 7px;margin-left:2px}
+.hrow .st::before{content:''}
 .empty{color:var(--sub);text-align:center;padding:60px 0}
+.tabs{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px;margin-bottom:14px}
+.tab{border:0;background:transparent;color:var(--sub);padding:8px 18px;font-size:14px}
+.tab.on{background:var(--ink);color:var(--bg)}
+select{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 12px;border-radius:999px;font-size:13px;font-weight:600}
+.hnote{font-size:12.5px;color:var(--sub)}
+.hstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:8px 0 14px}
+.hs{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.hs b{display:block;font-size:20px;font-weight:800}
+.hs span{font-size:11.5px;color:var(--sub);line-height:1.4;display:block}
+.hlist{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.hrow{display:grid;grid-template-columns:92px 1fr auto;gap:10px;align-items:center;padding:11px 14px;border-top:1px solid var(--line)}
+.hrow:first-child{border-top:0}
+.hrow .d{font-size:12px;color:var(--sub);font-variant-numeric:tabular-nums;line-height:1.35}
+.hrow .m b{font-size:15px;font-weight:800;margin-right:6px}
+.hrow .m small{font-size:12px;color:var(--sub)}
+.hrow .m .tf{margin-right:6px}
+.hrow .r{text-align:right;font-size:12.5px;font-weight:700;line-height:1.35}
+.hrow .r small{display:block;font-weight:500;color:var(--sub)}
+.res-win{color:var(--good)} .res-loss{color:var(--bad)} .res-open{color:var(--sub)}
+.vg{color:var(--good);font-weight:700} .vb{color:var(--bad);font-weight:700}
+.more{text-align:center;margin-top:12px}
 footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:18px}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.wrap{padding-top:28px}.brand img{width:44px;height:44px}}
 </style>
@@ -140,6 +168,11 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
     <div class="stat"><b id="sSym">–</b><span>監控商品</span></div>
   </section>
 
+  <div class="tabs">
+    <button class="tab on" data-v="live">最新訊號</button>
+    <button class="tab" data-v="hist">歷史紀錄</button>
+  </div>
+
   <div class="bar" id="bar1">
     <button class="chip on" data-f="all">全部</button>
     <button class="chip" data-f="有利">🟢 有利</button>
@@ -154,6 +187,16 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
 
   <main class="grid" id="grid"></main>
 
+  <section id="hist" hidden>
+    <div class="bar">
+      <select id="hmon"></select>
+      <span class="hnote" id="hcount"></span>
+    </div>
+    <div class="hstats" id="hstats"></div>
+    <div class="hlist" id="hlist"></div>
+    <div class="more"><button id="hmore" hidden>再多顯示 200 筆</button></div>
+  </section>
+
   <footer>
     紅吞噬＝<span class="up">做多</span>、綠吞噬＝<span class="down">放空</span>（全包：實體與高低點都包住前一根）。進場＝收盤價，停損＝吞噬高／低點，停利為 3R／6R／10R 預估。<br>
     手數＝願意賠的金額 ÷（停損距離 × 每手價值＋$7 手續費），0.01 手捨去。新聞判斷：美國與德日英澳殖利率利差、美元、VIX、高收益債利差、原油，只用訊號當下已公布的資料。<br>
@@ -165,6 +208,7 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
 const $ = s => document.querySelector(s);
 const REPO = 'ZAISSS1/fx-engulf';
 const SIDE = {'多': '<span class="up">做多</span>', '空': '<span class="down">放空</span>'};
+const STR = v => `<span class="st st-${v === '強' ? 's' : v === '中' ? 'm' : 'w'}">${v || '弱'}</span>`;
 let ALL = [], STATUS = {}, F = 'all', TFF = 'all', CFG = {tfs: {}, options: ['H1', 'H4', 'D1']}, DRAFT = {};
 const LS = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 
@@ -245,7 +289,7 @@ function card(s, fresh){
     ${s.cost_note ? `<div class="why">手數${esc(s.cost_note)}</div>` : ''}
     <div class="why">${why || '各因素中性'}</div>
     ${s.events && s.events.length ? `<div class="ev">⚠ ${esc(s.events.join('；'))}</div>` : ''}
-    <div class="verdict ${good ? 'good' : 'bad'}"><span>${good ? '🟢 有利' : '🔴 不利'}</span><small>強度 ${s.strength}・${s.ratio > 0 ? '+' : ''}${s.ratio.toFixed(2)}</small></div>
+    <div class="verdict ${good ? 'good' : 'bad'}"><span>${good ? '🟢 有利' : '🔴 不利'}</span><small>${STR(s.strength)}　${s.ratio > 0 ? '+' : ''}${s.ratio.toFixed(2)}</small></div>
   </article>`;
 }
 
@@ -257,6 +301,7 @@ function drawTfChips(){
 }
 
 function render(){
+  if (VIEW === 'hist') return renderHist();
   const q = $('#q').value.trim().toUpperCase();
   const rows = ALL.filter(s => (F === 'all' || s.verdict === F || s.side === F || (F === '順勢' && s.trend === '順勢'))
     && (TFF === 'all' || (s.tf || 'H4') === TFF) && (!q || s.sym.includes(q)));
@@ -292,6 +337,52 @@ async function load(){
     }
   }catch(e){ $('#meta').textContent = '資料載入失敗，稍後自動重試'; }
 }
+/* ---------- 歷史紀錄 ---------- */
+let VIEW = 'live', HIST = null, HSHOW = 200;
+document.querySelectorAll('.tab').forEach(b => b.onclick = async () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('on')); b.classList.add('on'); VIEW = b.dataset.v;
+  $('#grid').hidden = VIEW !== 'live'; $('#hist').hidden = VIEW !== 'hist';
+  if (VIEW === 'hist' && !HIST) await loadHist();
+  render();
+});
+async function loadHist(){
+  $('#hcount').textContent = '載入中…';
+  try{
+    const h = await fetch('history.json?' + Date.now()).then(r => r.json());
+    HIST = h.rows.map(r => Object.fromEntries(h.keys.map((k, i) => [k, r[i]])));
+    const mons = [...new Set(HIST.map(s => s.time.slice(0, 7)))].sort().reverse();
+    $('#hmon').innerHTML = '<option value="all">全部月份</option>' + mons.map(m => `<option value="${m}">${m.replace('-', ' 年 ')} 月</option>`).join('');
+    $('#hmon').onchange = () => { HSHOW = 200; render(); };
+  }catch(e){ HIST = []; $('#hcount').textContent = '歷史資料載入失敗'; }
+}
+$('#hmore').onclick = () => { HSHOW += 200; render(); };
+const pct = (a, b) => b ? Math.round(a / b * 100) + '%' : '–';
+function renderHist(){
+  if (!HIST) return;
+  const q = $('#q').value.trim().toUpperCase(), mon = $('#hmon').value;
+  const rows = HIST.filter(s => (F === 'all' || s.verdict === F || s.side === F || (F === '順勢' && s.trend === '順勢'))
+    && (TFF === 'all' || (s.tf || 'H4') === TFF) && (!q || s.sym.includes(q)) && (mon === 'all' || s.time.startsWith(mon)));
+  const closed = rows.filter(s => s.result && s.result !== '進行中');
+  const st = v => { const g = closed.filter(s => s.verdict === v); return [g.filter(s => s.max_r >= 3).length, g.length]; };
+  const [g3, gn] = st('有利'), [b3, bn] = st('不利');
+  const all3 = closed.filter(s => s.max_r >= 3).length;
+  $('#hcount').textContent = `共 ${rows.length} 筆吞噬`;
+  $('#hstats').innerHTML = `
+    <div class="hs"><b>${pct(all3, closed.length)}</b><span>停損前到過 3R（${all3}/${closed.length}）</span></div>
+    <div class="hs"><b class="vg">${pct(g3, gn)}</b><span>🟢 有利 到 3R（${g3}/${gn}）</span></div>
+    <div class="hs"><b class="vb">${pct(b3, bn)}</b><span>🔴 不利 到 3R（${b3}/${bn}）</span></div>
+    <div class="hs"><b>${pct(closed.filter(s => s.max_r >= 10).length, closed.length)}</b><span>到過 10R</span></div>`;
+  $('#hlist').innerHTML = rows.length ? rows.slice(0, HSHOW).map(s => {
+    const cls = !s.result || s.result === '進行中' ? 'res-open' : s.max_r >= 3 ? 'res-win' : 'res-loss';
+    return `<div class="hrow">
+      <div class="d">${s.time.slice(0, 10)}<br>${s.time.slice(11)} MT4</div>
+      <div class="m"><b>${esc(s.sym)}</b><span class="tf">${s.tf || 'H4'}</span>${SIDE[s.side]}<br>
+        <small><span class="${s.verdict === '有利' ? 'vg' : 'vb'}">${s.verdict === '有利' ? '🟢 有利' : '🔴 不利'}</span>${STR(s.strength)}・${s.trend}・停損 ${Number(s.sl).toFixed(s.digits)}</small></div>
+      <div class="r ${cls}">${esc(s.result || '計算中')}<small>最大 ${s.max_r === '' ? '–' : s.max_r + 'R'}</small></div>
+    </div>`; }).join('') : '<div class="empty">沒有符合的紀錄</div>';
+  $('#hmore').hidden = rows.length <= HSHOW;
+}
+
 load(); setInterval(load, 5 * 60 * 1000);
 </script>
 </body>
