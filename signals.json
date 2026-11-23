@@ -1,5 +1,110 @@
 [
  {
+  "id": "XAGUSD_202611231200",
+  "sym": "XAGUSD",
+  "tf": "H4",
+  "time": "2026-11-23 12:00",
+  "side": "多",
+  "pattern": "紅吞噬",
+  "trend": "均線分歧",
+  "ma": "MA20上・MA60下・MA200下",
+  "prev": "42.528→42.499（陰）",
+  "entry": 43.577,
+  "sl": 41.982,
+  "sl_pips": 1.595,
+  "sl_unit": "點",
+  "tp3": 48.362,
+  "tp5": 51.552,
+  "tp6": 53.147,
+  "tp10": 59.527,
+  "digits": 3,
+  "lots": {
+   "20": {
+    "lot": 0.0,
+    "risk": 0.0
+   },
+   "50": {
+    "lot": 0.0,
+    "risk": 0.0
+   },
+   "100": {
+    "lot": 0.01,
+    "risk": 79.82
+   }
+  },
+  "loss_per_lot": 7982.0,
+  "min_risk": 79.82,
+  "cost_note": "",
+  "verdict": "不利",
+  "strength": "弱",
+  "ratio": 0.0,
+  "support": [
+   "美2Y殖利率下降",
+   "美10Y殖利率下降"
+  ],
+  "against": [
+   "美元指數上升",
+   "通膨預期下降"
+  ],
+  "events": [],
+  "source": "MT4 匯出",
+  "ext_atr": -8.83,
+  "created": "2026-11-24 00:05"
+ },
+ {
+  "id": "BTCUSD_202611231200",
+  "sym": "BTCUSD",
+  "tf": "H4",
+  "time": "2026-11-23 12:00",
+  "side": "多",
+  "pattern": "紅吞噬",
+  "trend": "均線分歧",
+  "ma": "MA20上・MA60下・MA200下",
+  "prev": "61378→61346（陰）",
+  "entry": 62828.26,
+  "sl": 60993.63,
+  "sl_pips": 1834.63,
+  "sl_unit": "點",
+  "tp3": 68332.15,
+  "tp5": 72001.41,
+  "tp6": 73836.04,
+  "tp10": 81174.56,
+  "digits": 2,
+  "lots": {
+   "20": {
+    "lot": 0.01,
+    "risk": 18.35
+   },
+   "50": {
+    "lot": 0.02,
+    "risk": 36.69
+   },
+   "100": {
+    "lot": 0.05,
+    "risk": 91.73
+   }
+  },
+  "loss_per_lot": 1834.63,
+  "min_risk": 18.35,
+  "cost_note": "未計手續費",
+  "verdict": "不利",
+  "strength": "強",
+  "ratio": -0.5,
+  "support": [
+   "美2Y殖利率下降",
+   "美10Y殖利率下降"
+  ],
+  "against": [
+   "VIX恐慌指數上升",
+   "美元指數上升",
+   "高收益債利差上升"
+  ],
+  "events": [],
+  "source": "MT4 匯出",
+  "ext_atr": -9.56,
+  "created": "2026-11-24 00:05"
+ },
+ {
   "id": "GBPUSD_202611230800",
   "sym": "GBPUSD",
   "tf": "H4",
@@ -52,7 +157,11 @@
   "created": "2026-11-23 20:05",
   "ext_atr": 6.81,
   "advice": "不建議",
-  "skip_why": "追太遠（MA20 離 MA200 6.8 ATR）；同組已有 AUDUSD，只做一筆"
+  "skip_why": "追太遠（MA20 離 MA200 6.8 ATR）；同組已有 AUDUSD，只做一筆",
+  "max_r": 1.78,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "AUDUSD_202611230800",
@@ -108,7 +217,11 @@
   "created": "2026-11-23 20:05",
   "ext_atr": 9.96,
   "advice": "不建議",
-  "skip_why": "追太遠（MA20 離 MA200 10.0 ATR）"
+  "skip_why": "追太遠（MA20 離 MA200 10.0 ATR）",
+  "max_r": 0.0,
+  "hit": "2026-11-23 12:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "NZDUSD_202611230800",
@@ -164,7 +277,11 @@
   "created": "2026-11-23 20:05",
   "ext_atr": 6.18,
   "advice": "不建議",
-  "skip_why": "追太遠（MA20 離 MA200 6.2 ATR）；同組已有 AUDUSD，只做一筆"
+  "skip_why": "追太遠（MA20 離 MA200 6.2 ATR）；同組已有 AUDUSD，只做一筆",
+  "max_r": 1.85,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "EURJPY_202611230800",
@@ -217,7 +334,11 @@
   "created": "2026-11-23 20:05",
   "ext_atr": 3.47,
   "advice": "建議",
-  "skip_why": ""
+  "skip_why": "",
+  "max_r": 1.52,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "ETHUSD_202611210400",
@@ -268,7 +389,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:24",
   "tp10": 2555.5,
-  "max_r": 1.32,
+  "max_r": 2.32,
   "hit": "",
   "result": "進行中",
   "done": false,
@@ -437,7 +558,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:23",
   "tp10": 0.62884,
-  "max_r": 1.81,
+  "max_r": 2.09,
   "hit": "",
   "result": "進行中",
   "done": false,
@@ -549,9 +670,9 @@
   "created": "2026-11-23 01:24",
   "tp10": 53204.19,
   "max_r": 8.11,
-  "hit": "",
-  "result": "到 6R",
-  "done": false,
+  "hit": "2026-11-23 12:00",
+  "result": "到 6R，後來停損",
+  "done": true,
   "ext_atr": 11.15,
   "advice": "不建議",
   "skip_why": "追太遠（MA20 離 MA200 11.2 ATR）"
@@ -604,9 +725,9 @@
   "created": "2026-11-23 01:24",
   "tp10": 1421.02,
   "max_r": 6.82,
-  "hit": "",
-  "result": "到 6R",
-  "done": false,
+  "hit": "2026-11-23 12:00",
+  "result": "到 6R，後來停損",
+  "done": true,
   "ext_atr": 10.64,
   "advice": "不建議",
   "skip_why": "追太遠（MA20 離 MA200 10.6 ATR）；同組已有 BTCUSD，只做一筆"
@@ -773,7 +894,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:23",
   "tp10": 0.62197,
-  "max_r": 1.45,
+  "max_r": 1.69,
   "hit": "",
   "result": "進行中",
   "done": false,
@@ -1053,7 +1174,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:23",
   "tp10": 0.6493,
-  "max_r": 4.79,
+  "max_r": 5.28,
   "hit": "",
   "result": "到 3R",
   "done": false,
@@ -2206,7 +2327,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:24",
   "tp10": 71.132,
-  "max_r": 3.88,
+  "max_r": 4.46,
   "hit": "",
   "result": "到 3R",
   "done": false,
@@ -2657,9 +2778,9 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:23",
   "tp10": 1.29262,
-  "max_r": 4.93,
+  "max_r": 6.96,
   "hit": "",
-  "result": "到 3R",
+  "result": "到 6R",
   "done": false,
   "ext_atr": 1.31,
   "advice": "不建議",
@@ -2714,7 +2835,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:23",
   "tp10": 0.6518,
-  "max_r": 6.5,
+  "max_r": 6.92,
   "hit": "",
   "result": "到 6R",
   "done": false,
@@ -3466,9 +3587,9 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:23",
   "tp10": 1.46341,
-  "max_r": 2.58,
+  "max_r": 3.05,
   "hit": "",
-  "result": "進行中",
+  "result": "到 3R",
   "done": false,
   "ext_atr": 2.84,
   "advice": "建議",
@@ -3744,7 +3865,7 @@
   ],
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 06:45",
-  "max_r": 7.69,
+  "max_r": 9.45,
   "hit": "",
   "result": "到 6R",
   "done": false,
@@ -3858,10 +3979,10 @@
   ],
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 06:47",
-  "max_r": 9.19,
+  "max_r": 10.68,
   "hit": "",
-  "result": "到 6R",
-  "done": false,
+  "result": "到 10R",
+  "done": true,
   "ext_atr": 2.16
  },
  {
@@ -5204,7 +5325,7 @@
   ],
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 06:45",
-  "max_r": 7.32,
+  "max_r": 8.9,
   "hit": "",
   "result": "到 6R",
   "done": false,
@@ -5739,7 +5860,7 @@
   ],
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 07:16",
-  "max_r": 4.93,
+  "max_r": 5.25,
   "hit": "",
   "result": "到 3R",
   "done": false,
@@ -16922,128 +17043,6 @@
   "created": "2026-11-23 06:46",
   "max_r": 0.0,
   "hit": "2026-09-30 04:00",
-  "result": "停損",
-  "done": true,
-  "ext_atr": null,
-  "advice": "不建議",
-  "skip_why": "同組已有 AUDUSD，只做一筆"
- },
- {
-  "id": "AUDUSD_202609300000",
-  "sym": "AUDUSD",
-  "tf": "H4",
-  "time": "2026-09-30 00:00",
-  "side": "空",
-  "pattern": "綠吞噬",
-  "trend": "順勢",
-  "ma": "MA20下・MA60下・MA200下",
-  "prev": "0.69868→0.69886（陽）",
-  "entry": 0.69689,
-  "sl": 0.69945,
-  "sl_pips": 25.6,
-  "sl_unit": "pip",
-  "tp3": 0.68921,
-  "tp6": 0.68153,
-  "tp10": 0.67129,
-  "digits": 5,
-  "lots": {
-   "20": {
-    "lot": 0.07,
-    "risk": 18.41
-   },
-   "50": {
-    "lot": 0.19,
-    "risk": 49.97
-   },
-   "100": {
-    "lot": 0.38,
-    "risk": 99.94
-   }
-  },
-  "loss_per_lot": 263.0,
-  "min_risk": 2.63,
-  "cost_note": "",
-  "verdict": "有利",
-  "strength": "強",
-  "ratio": 0.77,
-  "support": [
-   "美2Y殖利率上升",
-   "美10Y殖利率上升",
-   "VIX恐慌指數上升",
-   "美元指數上升",
-   "高收益債利差上升",
-   "美澳2Y利差上升"
-  ],
-  "against": [
-   "原油上升"
-  ],
-  "events": [
-   "RBA 09/29 04:30 GMT（之前 24 小時）"
-  ],
-  "source": "歷史檔（可能延遲）",
-  "created": "2026-11-23 06:47",
-  "max_r": 2.55,
-  "hit": "2026-10-12 00:00",
-  "result": "停損",
-  "done": true,
-  "ext_atr": null,
-  "advice": "建議",
-  "skip_why": ""
- },
- {
-  "id": "EURUSD_202609291200",
-  "sym": "EURUSD",
-  "tf": "H4",
-  "time": "2026-09-29 12:00",
-  "side": "空",
-  "pattern": "綠吞噬",
-  "trend": "順勢",
-  "ma": "MA20下・MA60下・MA200下",
-  "prev": "1.1349→1.1352（陽）",
-  "entry": 1.13352,
-  "sl": 1.13579,
-  "sl_pips": 22.7,
-  "sl_unit": "pip",
-  "tp3": 1.12671,
-  "tp6": 1.1199,
-  "tp10": 1.11082,
-  "digits": 5,
-  "lots": {
-   "20": {
-    "lot": 0.08,
-    "risk": 18.72
-   },
-   "50": {
-    "lot": 0.21,
-    "risk": 49.14
-   },
-   "100": {
-    "lot": 0.42,
-    "risk": 98.28
-   }
-  },
-  "loss_per_lot": 234.0,
-  "min_risk": 2.34,
-  "cost_note": "",
-  "verdict": "有利",
-  "strength": "強",
-  "ratio": 1.0,
-  "support": [
-   "美2Y殖利率上升",
-   "美10Y殖利率上升",
-   "VIX恐慌指數上升",
-   "美元指數上升",
-   "高收益債利差上升",
-   "美德2Y利差上升"
-  ],
-  "against": [],
-  "events": [
-   "RBA 09/29 04:30 GMT（之前 12 小時）"
-  ],
-  "source": "歷史檔（可能延遲）",
-  "created": "2026-11-23 06:45",
-  "max_r": 1.04,
-  "hit": "2026-09-30 08:00",
   "result": "停損",
   "done": true,
   "ext_atr": null,
