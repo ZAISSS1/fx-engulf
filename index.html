@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>吞噬K線吞噬線工具</title>
-<meta name="description" content="Exness MT4 23 個商品全包吞噬 K 線（H1／H4／D1 可選，預設 H4），訊號出現當下的新聞有利／不利評估，每小時更新。">
+<meta name="description" content="Exness MT4 19 個商品全包吞噬 K 線（H1／H4／D1 可選，預設 H4），訊號出現當下的新聞有利／不利評估，每小時更新。">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -82,7 +82,7 @@ input[type=search]{font:inherit;flex:1;min-width:140px;max-width:240px;border:1p
 .slbox span{display:block;font-size:12px;color:var(--sub)}
 .slbox b{display:block;font-size:28px;font-weight:900;letter-spacing:-.01em;line-height:1.15;font-variant-numeric:tabular-nums}
 .slbox small{font-size:12.5px;color:var(--sub)}
-.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--soft);border-radius:14px;padding:9px 12px;text-align:center}
+.nums{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:6px;background:var(--soft);border-radius:14px;padding:9px 12px;text-align:center}
 .nums div span{display:block;font-size:11px;color:var(--sub)}
 .nums div b{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
 .lots{display:flex;gap:6px}
@@ -149,6 +149,7 @@ select{font:inherit;border:1px solid var(--line);background:var(--card);color:va
 @media (max-width:640px){.tgrid{grid-template-columns:1fr}}
 footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:18px}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.wrap{padding-top:28px}.brand img{width:44px;height:44px}}
+.nums .man{background:#111;color:#fff;border-radius:10px;padding:4px 2px}.nums .man span{color:#fde68a;font-weight:700}.nums .man b{color:#fff}
 </style>
 </head>
 <body>
@@ -309,6 +310,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 function card(s, fresh){
   const good = s.verdict === '有利', d = s.digits;
   const tp10 = s.tp10 ?? (s.entry + (s.side === '多' ? 1 : -1) * 10 * Math.abs(s.entry - s.sl));
+  const tp5 = s.tp5 ?? (s.entry + (s.side === '多' ? 1 : -1) * 5 * Math.abs(s.entry - s.sl));
   const lots = Object.entries(s.lots).map(([k, v]) =>
     `<div class="lot"><span>賠 $${k}</span><b>${v.lot >= 0.01 ? v.lot.toFixed(2) : '—'}</b><span>${v.lot >= 0.01 ? '手' : '太小'}</span></div>`).join('');
   const why = [s.support.length ? `<em>支持</em>　${esc(s.support.join('、'))}` : '', s.against.length ? `<i>反對</i>　${esc(s.against.join('、'))}` : ''].filter(Boolean).join('<br>');
@@ -320,6 +322,7 @@ function card(s, fresh){
     <div class="slbox"><span>停損</span><b>${fmt(s.sl, d)}</b><small>距離 ${s.sl_pips} ${(s.sl_unit||'pip')==='pip'?'pip':'點'}・進場 ${fmt(s.entry, d)}</small></div>
     <div class="lots">${lots}</div>
     <div class="nums">
+      <div class="man"><span>手動 停利 5R</span><b>${fmt(tp5, d)}</b></div>
       <div><span>停利 3R</span><b>${fmt(s.tp3, d)}</b></div>
       <div><span>停利 6R</span><b>${fmt(s.tp6, d)}</b></div>
       <div><span>停利 10R</span><b>${fmt(tp10, d)}</b></div>
