@@ -123,6 +123,29 @@ select{font:inherit;border:1px solid var(--line);background:var(--card);color:va
 .res-win{color:var(--good)} .res-loss{color:var(--bad)} .res-open{color:var(--sub)}
 .vg{color:var(--good);font-weight:700} .vb{color:var(--bad);font-weight:700}
 .more{text-align:center;margin-top:12px}
+/* 趨勢總覽 */
+.tsum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.tsum div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.tsum b{display:block;font-size:22px;font-weight:900}
+.tsum span{font-size:12px;color:var(--sub)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;min-width:0}
+.thead{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.thead b{font-size:20px;font-weight:900}
+.tlab{font-size:18px;font-weight:900}
+.t-up{color:var(--up)} .t-down{color:var(--down)} .t-flat{color:var(--sub)}
+.tbar{position:relative;height:8px;border-radius:99px;background:var(--soft);margin:10px 0 4px;overflow:hidden}
+.tbar i{position:absolute;top:0;bottom:0;border-radius:99px}
+.tbar:after{content:'';position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:var(--line)}
+.tscale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--sub)}
+.ttf{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0}
+.ttf div{border:1px solid var(--line);border-radius:10px;padding:6px 8px;text-align:center}
+.ttf small{display:block;font-size:11px;color:var(--sub)}
+.ttf b{font-size:14px;font-weight:800}
+.tcom{font-size:13px;line-height:1.7;color:var(--ink);margin:0}
+.tfoot{font-size:11.5px;color:var(--sub);margin-top:8px}
+.tstale{font-size:11.5px;color:var(--warn);background:var(--warn-bg);border-radius:8px;padding:4px 8px;margin-top:8px}
+@media (max-width:640px){.tgrid{grid-template-columns:1fr}}
 footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:18px}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.wrap{padding-top:28px}.brand img{width:44px;height:44px}}
 </style>
@@ -171,6 +194,7 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
   <div class="tabs">
     <button class="tab on" data-v="live">最新訊號</button>
     <button class="tab" data-v="hist">歷史紀錄</button>
+    <button class="tab" data-v="trend">趨勢總覽</button>
   </div>
 
   <div class="bar" id="bar1">
@@ -195,6 +219,19 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
     <div class="hstats" id="hstats"></div>
     <div class="hlist" id="hlist"></div>
     <div class="more"><button id="hmore" hidden>再多顯示 200 筆</button></div>
+  </section>
+
+  <section id="trend" hidden>
+    <div class="tsum" id="tsum"></div>
+    <div class="bar" id="tbar">
+      <button class="chip on" data-k="all">全部</button>
+      <button class="chip" data-k="多"><span class="up">多頭</span></button>
+      <button class="chip" data-k="空"><span class="down">空頭</span></button>
+      <button class="chip" data-k="盤整">盤整</button>
+      <input type="search" id="tq" placeholder="搜尋商品">
+    </div>
+    <div class="tgrid" id="tgrid"></div>
+    <p class="hnote" id="tnote" style="margin-top:12px;line-height:1.7">判別方法：日線、4H、1H 各看 5 項——價格與 MA200、MA20 對 MA60、MA60 對 MA200、MA20 斜率、高低點結構（底底高／頂頂低），每項 ±1 分；綜合分數＝日線 50%＋4H 30%＋1H 20%，換算成 −100～+100。ADX 看趨勢強不強（≥25 明確、&lt;20 容易洗盤）。這是技術面描述，不是進場訊號。</p>
   </section>
 
   <footer>
@@ -302,6 +339,7 @@ function drawTfChips(){
 
 function render(){
   if (VIEW === 'hist') return renderHist();
+  if (VIEW === 'trend') return renderTrend();
   const q = $('#q').value.trim().toUpperCase();
   const rows = ALL.filter(s => (F === 'all' || s.verdict === F || s.side === F || (F === '順勢' && s.trend === '順勢'))
     && (TFF === 'all' || (s.tf || 'H4') === TFF) && (!q || s.sym.includes(q)));
@@ -341,8 +379,10 @@ async function load(){
 let VIEW = 'live', HIST = null, HSHOW = 200;
 document.querySelectorAll('.tab').forEach(b => b.onclick = async () => {
   document.querySelectorAll('.tab').forEach(x => x.classList.remove('on')); b.classList.add('on'); VIEW = b.dataset.v;
-  $('#grid').hidden = VIEW !== 'live'; $('#hist').hidden = VIEW !== 'hist';
+  $('#grid').hidden = VIEW !== 'live'; $('#hist').hidden = VIEW !== 'hist'; $('#trend').hidden = VIEW !== 'trend';
+  $('#bar1').hidden = $('#bar2').hidden = VIEW === 'trend';
   if (VIEW === 'hist' && !HIST) await loadHist();
+  if (VIEW === 'trend') await loadTrend();
   render();
 });
 async function loadHist(){
@@ -381,6 +421,37 @@ function renderHist(){
       <div class="r ${cls}">${esc(s.result || '計算中')}<small>最大 ${s.max_r === '' ? '–' : s.max_r + 'R'}</small></div>
     </div>`; }).join('') : '<div class="empty">沒有符合的紀錄</div>';
   $('#hmore').hidden = rows.length <= HSHOW;
+}
+
+/* ---------- 趨勢總覽 ---------- */
+let TR = null, TK = 'all';
+async function loadTrend(){
+  try{ TR = await fetch('trend.json?' + Date.now()).then(r => r.json()); }catch(e){ TR = {rows: []}; }
+}
+const tcls = l => l.includes('多') ? 't-up' : l.includes('空') ? 't-down' : 't-flat';
+document.querySelectorAll('#tbar .chip').forEach(c => c.onclick = () => {
+  document.querySelectorAll('#tbar .chip').forEach(x => x.classList.remove('on')); c.classList.add('on'); TK = c.dataset.k; renderTrend(); });
+$('#tq').oninput = () => renderTrend();
+function renderTrend(){
+  if (!TR) return;
+  const R = TR.rows || [];
+  const nUp = R.filter(r => r.score >= 15).length, nDn = R.filter(r => r.score <= -15).length;
+  $('#tsum').innerHTML = `<div><b class="t-up">${nUp}</b><span>多頭／偏多</span></div><div><b class="t-down">${nDn}</b><span>空頭／偏空</span></div><div><b>${R.length - nUp - nDn}</b><span>盤整</span></div>`;
+  const q = $('#tq').value.trim().toUpperCase();
+  const rows = R.filter(r => (!q || r.sym.includes(q)) && (TK === 'all' || (TK === '多' ? r.score >= 15 : TK === '空' ? r.score <= -15 : Math.abs(r.score) < 15)));
+  $('#tgrid').innerHTML = rows.length ? rows.map(r => {
+    const w = Math.abs(r.score) / 2, col = r.score >= 0 ? 'var(--up)' : 'var(--down)';
+    const bar = r.score >= 0 ? `left:50%;width:${w}%` : `left:${50 - w}%;width:${w}%`;
+    const tf = ['D1', 'H4', 'H1'].map(k => { const t = (r.tfs || {})[k]; return `<div><small>${k === 'D1' ? '日線' : k}</small><b class="${t ? tcls(t.label) : 't-flat'}">${t ? t.label : '–'}</b><small>ADX ${t ? Math.round(t.adx) : '–'}</small></div>`; }).join('');
+    return `<article class="tcard">
+      <div class="thead"><b>${esc(r.sym)}</b><span class="tlab ${tcls(r.label)}">${r.label}</span></div>
+      <div class="tbar"><i style="${bar};background:${col}"></i></div>
+      <div class="tscale"><span>空 −100</span><span>分數 ${r.score > 0 ? '+' : ''}${r.score}</span><span>多 +100</span></div>
+      <div class="ttf">${tf}</div>
+      <p class="tcom">${esc(r.comment)}</p>
+      <div class="tfoot">最後 K 棒 ${r.last} MT4・現價 ${Number(r.close).toFixed(r.digits)}・${esc(r.source || '')}</div>
+      ${r.stale ? `<div class="tstale">⚠ 資料停在 ${r.last.slice(0, 10)}，判斷可能過時；掛上 MT4 匯出 EA 會更新到最新</div>` : ''}
+    </article>`; }).join('') : '<div class="empty">沒有符合的商品</div>';
 }
 
 load(); setInterval(load, 5 * 60 * 1000);
