@@ -150,6 +150,7 @@ select{font:inherit;border:1px solid var(--line);background:var(--card);color:va
 footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:18px}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.wrap{padding-top:28px}.brand img{width:44px;height:44px}}
 .nums .man{background:#111;color:#fff;border-radius:10px;padding:4px 2px}.nums .man span{color:#fde68a;font-weight:700}.nums .man b{color:#fff}
+.skip{margin:8px 0 0;padding:7px 10px;border-radius:10px;background:#3a1d1d;color:#fca5a5;font-size:12px;font-weight:700}.okpick{margin:8px 0 0;padding:7px 10px;border-radius:10px;background:#123524;color:#86efac;font-size:12px;font-weight:700}.card.dim{opacity:.55}
 </style>
 </head>
 <body>
@@ -314,7 +315,7 @@ function card(s, fresh){
   const lots = Object.entries(s.lots).map(([k, v]) =>
     `<div class="lot"><span>賠 $${k}</span><b>${v.lot >= 0.01 ? v.lot.toFixed(2) : '—'}</b><span>${v.lot >= 0.01 ? '手' : '太小'}</span></div>`).join('');
   const why = [s.support.length ? `<em>支持</em>　${esc(s.support.join('、'))}` : '', s.against.length ? `<i>反對</i>　${esc(s.against.join('、'))}` : ''].filter(Boolean).join('<br>');
-  return `<article class="card${fresh ? ' fresh' : ''}">
+  return `<article class="card${fresh ? ' fresh' : ''}${s.advice === '不建議' ? ' dim' : ''}">
     <div class="top">
       <div><div class="sym">${esc(s.sym)}<span class="tf">${s.tf || 'H4'}</span></div><div class="tags">${s.pattern}・${SIDE[s.side]}・${s.trend}</div></div>
       <div class="time">${s.time.slice(5)} MT4</div>
@@ -330,6 +331,7 @@ function card(s, fresh){
     ${s.cost_note ? `<div class="why">手數${esc(s.cost_note)}</div>` : ''}
     <div class="why">${why || '各因素中性'}</div>
     ${s.events && s.events.length ? `<div class="ev">⚠ ${esc(s.events.join('；'))}</div>` : ''}
+    ${s.advice === '不建議' ? `<div class="skip">⛔ 不建議做：${esc(s.skip_why)}</div>` : (s.advice === '建議' ? `<div class="okpick">✅ 建議做（已通過：不追太遠、同組只做一筆）</div>` : '')}
     <div class="verdict ${good ? 'good' : 'bad'}"><span>${good ? '🟢 有利' : '🔴 不利'}</span><small>${STR(s.strength)}　${s.ratio > 0 ? '+' : ''}${s.ratio.toFixed(2)}</small></div>
   </article>`;
 }

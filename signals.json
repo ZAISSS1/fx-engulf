@@ -49,7 +49,10 @@
   ],
   "events": [],
   "source": "MT4 匯出",
-  "created": "2026-11-23 20:05"
+  "created": "2026-11-23 20:05",
+  "ext_atr": 6.81,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 6.8 ATR）；同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202611230800",
@@ -102,7 +105,10 @@
   ],
   "events": [],
   "source": "MT4 匯出",
-  "created": "2026-11-23 20:05"
+  "created": "2026-11-23 20:05",
+  "ext_atr": 9.96,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 10.0 ATR）"
  },
  {
   "id": "NZDUSD_202611230800",
@@ -155,7 +161,10 @@
   ],
   "events": [],
   "source": "MT4 匯出",
-  "created": "2026-11-23 20:05"
+  "created": "2026-11-23 20:05",
+  "ext_atr": 6.18,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 6.2 ATR）；同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "EURJPY_202611230800",
@@ -205,7 +214,10 @@
   "against": [],
   "events": [],
   "source": "MT4 匯出",
-  "created": "2026-11-23 20:05"
+  "created": "2026-11-23 20:05",
+  "ext_atr": 3.47,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "ETHUSD_202611210400",
@@ -259,7 +271,8 @@
   "max_r": 1.32,
   "hit": "",
   "result": "進行中",
-  "done": false
+  "done": false,
+  "ext_atr": -9.33
  },
  {
   "id": "USDCAD_202611200800",
@@ -314,7 +327,10 @@
   "max_r": 0.0,
   "hit": "2026-11-20 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 7.65,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 7.7 ATR）"
  },
  {
   "id": "USTEC_202611191200",
@@ -367,7 +383,10 @@
   "max_r": 3.98,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 4.55,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 4.5 ATR）"
  },
  {
   "id": "AUDUSD_202611191200",
@@ -421,7 +440,10 @@
   "max_r": 1.81,
   "hit": "",
   "result": "進行中",
-  "done": false
+  "done": false,
+  "ext_atr": 10.15,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 10.2 ATR）"
  },
  {
   "id": "AUDJPY_202611191200",
@@ -474,7 +496,10 @@
   "max_r": 2.96,
   "hit": "",
   "result": "進行中",
-  "done": false
+  "done": false,
+  "ext_atr": 6.1,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 6.1 ATR）"
  },
  {
   "id": "BTCUSD_202611191200",
@@ -526,7 +551,10 @@
   "max_r": 8.11,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 11.15,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 11.2 ATR）"
  },
  {
   "id": "ETHUSD_202611191200",
@@ -578,7 +606,10 @@
   "max_r": 6.82,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 10.64,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 10.6 ATR）；同組已有 BTCUSD，只做一筆"
  },
  {
   "id": "XAUUSD_202611190000",
@@ -633,7 +664,10 @@
   "max_r": 5.7,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 6.58,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 6.6 ATR）"
  },
  {
   "id": "EURUSD_202611190000",
@@ -685,7 +719,10 @@
   "max_r": 0.0,
   "hit": "2026-11-19 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 8.18,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 8.2 ATR）；同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202611190000",
@@ -739,7 +776,10 @@
   "max_r": 1.45,
   "hit": "",
   "result": "進行中",
-  "done": false
+  "done": false,
+  "ext_atr": 12.13,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 12.1 ATR）"
  },
  {
   "id": "NZDUSD_202611190000",
@@ -792,7 +832,8 @@
   "max_r": 4.13,
   "hit": "2026-11-19 20:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": -8.73
  },
  {
   "id": "EURJPY_202611181600",
@@ -845,7 +886,8 @@
   "max_r": 6.49,
   "hit": "2026-11-20 08:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": -3.94
  },
  {
   "id": "AUDJPY_202611181200",
@@ -899,7 +941,10 @@
   "max_r": 1.74,
   "hit": "2026-11-19 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 6.56,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 6.6 ATR）"
  },
  {
   "id": "CADJPY_202611181200",
@@ -953,7 +998,10 @@
   "max_r": 0.29,
   "hit": "2026-11-19 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 1.82,
+  "advice": "不建議",
+  "skip_why": "同組已有 AUDJPY，只做一筆"
  },
  {
   "id": "AUDUSD_202611181200",
@@ -1008,7 +1056,10 @@
   "max_r": 4.79,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 11.89,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 11.9 ATR）"
  },
  {
   "id": "USDCAD_202611181200",
@@ -1061,7 +1112,10 @@
   "max_r": 0.85,
   "hit": "2026-11-19 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 8.92,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 8.9 ATR）；同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "CADJPY_202611180800",
@@ -1115,7 +1169,8 @@
   "max_r": 0.0,
   "hit": "2026-11-18 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -1.61
  },
  {
   "id": "USOIL_202611180800",
@@ -1169,7 +1224,8 @@
   "max_r": 0.44,
   "hit": "2026-11-18 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -6.4
  },
  {
   "id": "AUDUSD_202611180800",
@@ -1224,7 +1280,8 @@
   "max_r": 0.0,
   "hit": "2026-11-18 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -11.68
  },
  {
   "id": "USDCAD_202611180800",
@@ -1277,7 +1334,8 @@
   "max_r": 0.0,
   "hit": "2026-11-18 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -9.12
  },
  {
   "id": "GBPJPY_202611180000",
@@ -1330,7 +1388,10 @@
   "max_r": 6.3,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": -0.08,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202611172000",
@@ -1382,7 +1443,8 @@
   "max_r": 0.03,
   "hit": "2026-11-18 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -2.89
  },
  {
   "id": "XAUUSD_202611171200",
@@ -1437,7 +1499,8 @@
   "max_r": 0.01,
   "hit": "2026-11-18 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -6.66
  },
  {
   "id": "US500_202611171200",
@@ -1489,7 +1552,10 @@
   "max_r": 4.38,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 2.56,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202611171200",
@@ -1541,7 +1607,10 @@
   "max_r": 6.66,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 10.87,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 10.9 ATR）"
  },
  {
   "id": "EURUSD_202611171200",
@@ -1594,7 +1663,8 @@
   "max_r": 0.58,
   "hit": "2026-11-18 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -7.93
  },
  {
   "id": "USTEC_202611170800",
@@ -1647,7 +1717,8 @@
   "max_r": 0.0,
   "hit": "2026-11-17 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -4.29
  },
  {
   "id": "CADJPY_202611170800",
@@ -1700,7 +1771,10 @@
   "max_r": 0.0,
   "hit": "2026-11-17 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.53,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "NZDUSD_202611170800",
@@ -1753,7 +1827,8 @@
   "max_r": 0.0,
   "hit": "2026-11-17 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -8.11
  },
  {
   "id": "US500_202611170800",
@@ -1805,7 +1880,8 @@
   "max_r": 0.0,
   "hit": "2026-11-17 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -2.48
  },
  {
   "id": "XAUUSD_202611170000",
@@ -1860,7 +1936,8 @@
   "max_r": 0.58,
   "hit": "2026-11-17 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -6.14
  },
  {
   "id": "EURUSD_202611170000",
@@ -1913,7 +1990,8 @@
   "max_r": 0.25,
   "hit": "2026-11-17 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -8.1
  },
  {
   "id": "GBPUSD_202611170000",
@@ -1966,7 +2044,8 @@
   "max_r": 1.28,
   "hit": "2026-11-19 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -4.81
  },
  {
   "id": "AUDUSD_202611170000",
@@ -2020,7 +2099,8 @@
   "max_r": 0.21,
   "hit": "2026-11-17 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -10.94
  },
  {
   "id": "USDJPY_202611170000",
@@ -2074,7 +2154,8 @@
   "max_r": 1.1,
   "hit": "2026-11-18 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -5.17
  },
  {
   "id": "USOIL_202611160800",
@@ -2128,7 +2209,10 @@
   "max_r": 3.88,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 5.16,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 5.2 ATR）"
  },
  {
   "id": "EURUSD_202611160000",
@@ -2183,7 +2267,10 @@
   "max_r": 0.7,
   "hit": "2026-11-16 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 5.69,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 5.7 ATR）"
  },
  {
   "id": "HK50_202611160000",
@@ -2236,7 +2323,10 @@
   "max_r": 0.25,
   "hit": "2026-11-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.32,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202611160000",
@@ -2290,7 +2380,10 @@
   "max_r": 0.0,
   "hit": "2026-11-16 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 5.64,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 5.6 ATR）"
  },
  {
   "id": "GBPJPY_202611152000",
@@ -2343,7 +2436,10 @@
   "max_r": 0.0,
   "hit": "2026-11-16 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 2.56,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202611152000",
@@ -2398,7 +2494,8 @@
   "max_r": 0.0,
   "hit": "2026-11-16 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -4.32
  },
  {
   "id": "AUDUSD_202611152000",
@@ -2454,7 +2551,8 @@
   "max_r": 0.0,
   "hit": "2026-11-16 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -7.66
  },
  {
   "id": "XAGUSD_202611131200",
@@ -2506,7 +2604,10 @@
   "max_r": 6.62,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 6.29,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 6.3 ATR）"
  },
  {
   "id": "GBPUSD_202611131200",
@@ -2559,7 +2660,10 @@
   "max_r": 4.93,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 1.31,
+  "advice": "不建議",
+  "skip_why": "同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202611131200",
@@ -2613,7 +2717,10 @@
   "max_r": 6.5,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 7.64,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 7.6 ATR）"
  },
  {
   "id": "US500_202611131200",
@@ -2665,7 +2772,10 @@
   "max_r": 5.32,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 2.59,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USTEC_202611131200",
@@ -2717,7 +2827,10 @@
   "max_r": 3.76,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": 5.12,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 5.1 ATR）；同組已有 US500，只做一筆"
  },
  {
   "id": "GBPJPY_202611131200",
@@ -2768,7 +2881,8 @@
   "max_r": 9.45,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": -3.03
  },
  {
   "id": "AUDJPY_202611131200",
@@ -2820,7 +2934,8 @@
   "max_r": 8.85,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 3.52
  },
  {
   "id": "US500_202611130800",
@@ -2872,7 +2987,8 @@
   "max_r": 0.0,
   "hit": "2026-11-13 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -2.6
  },
  {
   "id": "USTEC_202611130800",
@@ -2924,7 +3040,8 @@
   "max_r": 0.0,
   "hit": "2026-11-13 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -5.02
  },
  {
   "id": "GBPUSD_202611130400",
@@ -2977,7 +3094,10 @@
   "max_r": 0.0,
   "hit": "2026-11-13 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.46,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USDJPY_202611130400",
@@ -3029,7 +3149,8 @@
   "max_r": 4.18,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": -3.54
  },
  {
   "id": "GBPJPY_202611130400",
@@ -3080,7 +3201,8 @@
   "max_r": 10.99,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": -3.53
  },
  {
   "id": "HK50_202611130000",
@@ -3132,7 +3254,8 @@
   "max_r": 11.3,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": -2.09
  },
  {
   "id": "CADJPY_202611130000",
@@ -3184,7 +3307,10 @@
   "max_r": 0.0,
   "hit": "2026-11-13 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.45,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202611130000",
@@ -3237,7 +3363,8 @@
   "max_r": 0.66,
   "hit": "2026-11-13 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -3.12
  },
  {
   "id": "USDCAD_202611130000",
@@ -3290,7 +3417,8 @@
   "max_r": 0.27,
   "hit": "2026-11-13 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -4.53
  },
  {
   "id": "USDCAD_202611121200",
@@ -3341,7 +3469,10 @@
   "max_r": 2.58,
   "hit": "",
   "result": "進行中",
-  "done": false
+  "done": false,
+  "ext_atr": 2.84,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202611120400",
@@ -3396,7 +3527,8 @@
   "max_r": 1.53,
   "hit": "2026-11-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -6.05
  },
  {
   "id": "ETHUSD_202611111200",
@@ -3448,7 +3580,8 @@
   "max_r": 0.92,
   "hit": "2026-11-11 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -6.3
  },
  {
   "id": "USOIL_202611110800",
@@ -3501,7 +3634,8 @@
   "max_r": 2.5,
   "hit": "2026-11-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -4.23
  },
  {
   "id": "EURUSD_202611110000",
@@ -3554,7 +3688,10 @@
   "max_r": 30.88,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": 1.7,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202611100800",
@@ -3610,7 +3747,8 @@
   "max_r": 7.69,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 1.41
  },
  {
   "id": "AUDUSD_202611100800",
@@ -3666,7 +3804,8 @@
   "max_r": 15.72,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": 3.58
  },
  {
   "id": "NZDUSD_202611100800",
@@ -3722,7 +3861,8 @@
   "max_r": 9.19,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 2.16
  },
  {
   "id": "GBPUSD_202611100800",
@@ -3777,7 +3917,8 @@
   "max_r": 10.1,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": -3.8
  },
  {
   "id": "DE30_202611100000",
@@ -3829,7 +3970,10 @@
   "max_r": 1.88,
   "hit": "2026-11-10 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 3.2,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202611100000",
@@ -3884,7 +4028,8 @@
   "max_r": 22.01,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": 6.02
  },
  {
   "id": "EURJPY_202611090800",
@@ -3941,7 +4086,8 @@
   "max_r": 3.03,
   "hit": "2026-11-12 16:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": -0.36
  },
  {
   "id": "GBPJPY_202611090800",
@@ -3998,7 +4144,8 @@
   "max_r": 2.11,
   "hit": "2026-11-10 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 3.82
  },
  {
   "id": "AUDJPY_202611082000",
@@ -4054,7 +4201,10 @@
   "max_r": 0.0,
   "hit": "2026-11-09 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.68,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPUSD_202611082000",
@@ -4111,7 +4261,8 @@
   "max_r": 5.99,
   "hit": "2026-11-10 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": 4.26
  },
  {
   "id": "XAUUSD_202611082000",
@@ -4168,7 +4319,8 @@
   "max_r": 0.0,
   "hit": "2026-11-09 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 1.47
  },
  {
   "id": "ETHUSD_202611072000",
@@ -4225,7 +4377,8 @@
   "max_r": 0.38,
   "hit": "2026-11-08 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPJPY_202611061200",
@@ -4282,7 +4435,10 @@
   "max_r": 0.27,
   "hit": "2026-11-09 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -4.09,
+  "advice": "不建議",
+  "skip_why": "同組已有 CADJPY，只做一筆"
  },
  {
   "id": "CADJPY_202611061200",
@@ -4339,7 +4495,10 @@
   "max_r": 3.81,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": -3.25,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202611061200",
@@ -4395,7 +4554,8 @@
   "max_r": 0.52,
   "hit": "2026-11-11 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.49
  },
  {
   "id": "EURUSD_202611060000",
@@ -4454,7 +4614,8 @@
   "max_r": 1.89,
   "hit": "2026-11-10 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.61
  },
  {
   "id": "USDJPY_202611051200",
@@ -4511,7 +4672,10 @@
   "max_r": 0.99,
   "hit": "2026-11-06 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -0.54,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "DE30_202611051200",
@@ -4567,7 +4731,10 @@
   "max_r": 1.76,
   "hit": "2026-11-11 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -2.95,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202611051200",
@@ -4624,7 +4791,8 @@
   "max_r": 2.12,
   "hit": "",
   "result": "進行中",
-  "done": false
+  "done": false,
+  "ext_atr": 1.99
  },
  {
   "id": "XAGUSD_202611051200",
@@ -4679,7 +4847,8 @@
   "max_r": 0.4,
   "hit": "2026-11-11 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 7.48
  },
  {
   "id": "EURJPY_202611050800",
@@ -4736,7 +4905,10 @@
   "max_r": 15.16,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": 0.34,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "DE30_202611050800",
@@ -4792,7 +4964,8 @@
   "max_r": 0.0,
   "hit": "2026-11-05 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 2.94
  },
  {
   "id": "GBPUSD_202611050400",
@@ -4850,7 +5023,10 @@
   "max_r": 13.14,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": -5.28,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202611042000",
@@ -4908,7 +5084,8 @@
   "max_r": 0.72,
   "hit": "2026-11-05 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPUSD_202611041200",
@@ -4967,7 +5144,10 @@
   "max_r": 11.73,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": -4.38,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202611041200",
@@ -5027,7 +5207,8 @@
   "max_r": 7.32,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": 1.78
  },
  {
   "id": "GBPJPY_202611040400",
@@ -5084,7 +5265,8 @@
   "max_r": 0.76,
   "hit": "2026-11-05 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 4.51
  },
  {
   "id": "AUDJPY_202611040400",
@@ -5140,7 +5322,8 @@
   "max_r": 0.74,
   "hit": "2026-11-05 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 0.14
  },
  {
   "id": "CADJPY_202611040400",
@@ -5196,7 +5379,8 @@
   "max_r": 0.89,
   "hit": "2026-11-05 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 4.86
  },
  {
   "id": "AUDUSD_202611040000",
@@ -5255,7 +5439,10 @@
   "max_r": 0.0,
   "hit": "2026-11-04 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": -0.23,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202611032000",
@@ -5314,7 +5501,10 @@
   "max_r": 3.25,
   "hit": "2026-11-06 04:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": -2.98,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAUUSD_202611032000",
@@ -5373,7 +5563,10 @@
   "max_r": 10.22,
   "hit": "2026-11-12 12:00",
   "result": "到 10R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": -6.81,
+  "advice": "不建議",
+  "skip_why": "同組已有 XAGUSD，只做一筆"
  },
  {
   "id": "XAGUSD_202611032000",
@@ -5429,7 +5622,10 @@
   "max_r": 7.04,
   "hit": "2026-11-15 20:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": -11.45,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202611031200",
@@ -5486,7 +5682,10 @@
   "max_r": 0.81,
   "hit": "2026-11-05 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": 4.62,
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 4.6 ATR）"
  },
  {
   "id": "USOIL_202611031200",
@@ -5543,7 +5742,10 @@
   "max_r": 4.93,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAUUSD_202611030000",
@@ -5601,7 +5803,8 @@
   "max_r": 0.81,
   "hit": "2026-11-03 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "HK50_202611030000",
@@ -5657,7 +5860,8 @@
   "max_r": 7.85,
   "hit": "2026-11-19 00:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAGUSD_202611021200",
@@ -5713,7 +5917,10 @@
   "max_r": 0.11,
   "hit": "2026-11-03 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USTEC_202611021200",
@@ -5770,7 +5977,10 @@
   "max_r": 6.74,
   "hit": "2026-11-04 12:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USDJPY_202611020800",
@@ -5828,7 +6038,8 @@
   "max_r": 2.47,
   "hit": "2026-11-04 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "CADJPY_202611020800",
@@ -5883,7 +6094,8 @@
   "max_r": 0.0,
   "hit": "2026-11-02 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202611020400",
@@ -5938,7 +6150,10 @@
   "max_r": 0.0,
   "hit": "2026-11-02 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPJPY_202611012000",
@@ -5994,7 +6209,8 @@
   "max_r": 10.72,
   "hit": "2026-11-16 00:00",
   "result": "到 10R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202611012000",
@@ -6051,7 +6267,8 @@
   "max_r": 0.73,
   "hit": "2026-11-02 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "ETHUSD_202611012000",
@@ -6108,7 +6325,8 @@
   "max_r": 1.49,
   "hit": "2026-11-02 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202611011600",
@@ -6165,7 +6383,10 @@
   "max_r": 0.0,
   "hit": "2026-11-01 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "AUDJPY_202610301200",
@@ -6224,7 +6445,10 @@
   "max_r": 0.44,
   "hit": "2026-11-03 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "ETHUSD_202610301200",
@@ -6283,7 +6507,8 @@
   "max_r": 0.29,
   "hit": "2026-10-31 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURJPY_202610300800",
@@ -6341,7 +6566,8 @@
   "max_r": 0.96,
   "hit": "2026-11-02 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPJPY_202610300400",
@@ -6399,7 +6625,10 @@
   "max_r": 0.24,
   "hit": "2026-10-30 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610300000",
@@ -6457,7 +6686,10 @@
   "max_r": 3.97,
   "hit": "2026-11-19 00:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202610300000",
@@ -6516,7 +6748,10 @@
   "max_r": 2.24,
   "hit": "2026-11-01 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURJPY_202610300000",
@@ -6574,7 +6809,8 @@
   "max_r": 2.6,
   "hit": "2026-11-02 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPJPY_202610300000",
@@ -6632,7 +6868,8 @@
   "max_r": 0.0,
   "hit": "2026-10-30 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURUSD_202610291200",
@@ -6691,7 +6928,10 @@
   "max_r": 1.83,
   "hit": "2026-11-11 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "NZDUSD_202610291200",
@@ -6750,7 +6990,10 @@
   "max_r": 0.77,
   "hit": "2026-11-03 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 EURUSD，只做一筆"
  },
  {
   "id": "USDJPY_202610291200",
@@ -6809,7 +7052,8 @@
   "max_r": 2.81,
   "hit": "2026-11-03 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDCAD_202610290800",
@@ -6868,7 +7112,10 @@
   "max_r": 0.0,
   "hit": "2026-10-29 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "DE30_202610290800",
@@ -6923,7 +7170,10 @@
   "max_r": 1.19,
   "hit": "2026-10-30 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPUSD_202610290800",
@@ -6982,7 +7232,8 @@
   "max_r": 0.0,
   "hit": "2026-10-29 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610282000",
@@ -7040,7 +7291,8 @@
   "max_r": 12.86,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610282000",
@@ -7098,7 +7350,8 @@
   "max_r": 9.29,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610281600",
@@ -7156,7 +7409,10 @@
   "max_r": 0.15,
   "hit": "2026-10-29 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 XAGUSD，只做一筆"
  },
  {
   "id": "XAGUSD_202610281600",
@@ -7213,7 +7469,10 @@
   "max_r": 0.28,
   "hit": "2026-10-29 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610281600",
@@ -7270,7 +7529,8 @@
   "max_r": 0.59,
   "hit": "2026-10-29 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610281600",
@@ -7328,7 +7588,8 @@
   "max_r": 0.18,
   "hit": "2026-10-29 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610281200",
@@ -7386,7 +7647,10 @@
   "max_r": 0.95,
   "hit": "2026-10-28 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610281200",
@@ -7443,7 +7707,10 @@
   "max_r": 0.0,
   "hit": "2026-10-28 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAUUSD_202610281200",
@@ -7501,7 +7768,8 @@
   "max_r": 0.0,
   "hit": "2026-10-28 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "CADJPY_202610280800",
@@ -7557,7 +7825,8 @@
   "max_r": 3.02,
   "hit": "2026-11-06 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610280000",
@@ -7615,7 +7884,8 @@
   "max_r": 0.54,
   "hit": "2026-10-28 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAGUSD_202610280000",
@@ -7672,7 +7942,8 @@
   "max_r": 1.45,
   "hit": "2026-10-28 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDJPY_202610272000",
@@ -7727,7 +7998,8 @@
   "max_r": 1.96,
   "hit": "2026-10-28 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610270800",
@@ -7784,7 +8056,8 @@
   "max_r": 2.47,
   "hit": "2026-10-29 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610270800",
@@ -7839,7 +8112,8 @@
   "max_r": 10.37,
   "hit": "2026-11-19 16:00",
   "result": "到 10R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610270800",
@@ -7896,7 +8170,8 @@
   "max_r": 5.35,
   "hit": "2026-10-29 20:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "ETHUSD_202610270800",
@@ -7953,7 +8228,8 @@
   "max_r": 4.36,
   "hit": "2026-10-29 00:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610270400",
@@ -8008,7 +8284,10 @@
   "max_r": 0.0,
   "hit": "2026-10-27 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "AUDUSD_202610270400",
@@ -8066,7 +8345,8 @@
   "max_r": 0.0,
   "hit": "2026-10-27 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610270400",
@@ -8124,7 +8404,8 @@
   "max_r": 0.33,
   "hit": "2026-10-27 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USOIL_202610270400",
@@ -8179,7 +8460,8 @@
   "max_r": 0.0,
   "hit": "2026-10-27 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610270000",
@@ -8237,7 +8519,10 @@
   "max_r": 0.0,
   "hit": "2026-10-27 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610270000",
@@ -8293,7 +8578,10 @@
   "max_r": 1.88,
   "hit": "2026-10-30 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202610270000",
@@ -8350,7 +8638,10 @@
   "max_r": 0.56,
   "hit": "2026-10-27 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202610261200",
@@ -8405,7 +8696,8 @@
   "max_r": 0.07,
   "hit": "2026-10-27 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPJPY_202610260800",
@@ -8460,7 +8752,8 @@
   "max_r": 0.82,
   "hit": "2026-10-28 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610260800",
@@ -8515,7 +8808,8 @@
   "max_r": 5.65,
   "hit": "2026-10-30 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610260800",
@@ -8570,7 +8864,8 @@
   "max_r": 3.82,
   "hit": "2026-10-30 00:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610260000",
@@ -8626,7 +8921,10 @@
   "max_r": 2.56,
   "hit": "2026-10-30 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610260000",
@@ -8680,7 +8978,8 @@
   "max_r": 0.61,
   "hit": "2026-10-27 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDJPY_202610252000",
@@ -8736,7 +9035,10 @@
   "max_r": 0.0,
   "hit": "2026-10-26 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAUUSD_202610231200",
@@ -8791,7 +9093,8 @@
   "max_r": 0.82,
   "hit": "2026-10-27 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610231200",
@@ -8845,7 +9148,8 @@
   "max_r": 2.95,
   "hit": "2026-10-30 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDCAD_202610230800",
@@ -8900,7 +9204,10 @@
   "max_r": 1.84,
   "hit": "2026-10-25 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202610230000",
@@ -8955,7 +9262,8 @@
   "max_r": 2.74,
   "hit": "2026-10-26 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDUSD_202610230000",
@@ -9011,7 +9319,8 @@
   "max_r": 0.0,
   "hit": "2026-10-23 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "NZDUSD_202610230000",
@@ -9066,7 +9375,8 @@
   "max_r": 0.54,
   "hit": "2026-10-26 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDJPY_202610230000",
@@ -9120,7 +9430,8 @@
   "max_r": 3.95,
   "hit": "",
   "result": "到 3R",
-  "done": false
+  "done": false,
+  "ext_atr": null
  },
  {
   "id": "EURJPY_202610230000",
@@ -9174,7 +9485,8 @@
   "max_r": 0.32,
   "hit": "2026-10-23 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPJPY_202610230000",
@@ -9228,7 +9540,8 @@
   "max_r": 0.24,
   "hit": "2026-10-23 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "CADJPY_202610230000",
@@ -9283,7 +9596,8 @@
   "max_r": 3.02,
   "hit": "2026-11-16 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610230000",
@@ -9337,7 +9651,8 @@
   "max_r": 0.64,
   "hit": "2026-10-23 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610230000",
@@ -9391,7 +9706,8 @@
   "max_r": 0.11,
   "hit": "2026-10-23 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610221200",
@@ -9443,7 +9759,10 @@
   "max_r": 2.03,
   "hit": "2026-10-26 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USTEC_202610221200",
@@ -9495,7 +9814,10 @@
   "max_r": 1.44,
   "hit": "2026-10-27 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 US500，只做一筆"
  },
  {
   "id": "GBPUSD_202610220800",
@@ -9549,7 +9871,10 @@
   "max_r": 2.11,
   "hit": "2026-10-30 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202610220800",
@@ -9603,7 +9928,10 @@
   "max_r": 0.35,
   "hit": "2026-10-22 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAGUSD_202610211600",
@@ -9653,7 +9981,10 @@
   "max_r": 0.16,
   "hit": "2026-10-22 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPUSD_202610211200",
@@ -9706,7 +10037,10 @@
   "max_r": 0.53,
   "hit": "2026-10-22 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610211200",
@@ -9757,7 +10091,10 @@
   "max_r": 6.57,
   "hit": "2026-11-05 00:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610211200",
@@ -9808,7 +10145,8 @@
   "max_r": 0.42,
   "hit": "2026-10-22 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "CADJPY_202610210800",
@@ -9861,7 +10199,10 @@
   "max_r": 0.56,
   "hit": "2026-10-21 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202610210800",
@@ -9913,7 +10254,8 @@
   "max_r": 1.69,
   "hit": "2026-10-22 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USOIL_202610210400",
@@ -9967,7 +10309,10 @@
   "max_r": 0.0,
   "hit": "2026-10-21 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "NZDUSD_202610210400",
@@ -10020,7 +10365,8 @@
   "max_r": 1.31,
   "hit": "2026-10-22 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610210400",
@@ -10071,7 +10417,8 @@
   "max_r": 3.47,
   "hit": "2026-10-22 04:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDJPY_202610210000",
@@ -10124,7 +10471,10 @@
   "max_r": 7.61,
   "hit": "2026-11-03 12:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610210000",
@@ -10175,7 +10525,10 @@
   "max_r": 2.6,
   "hit": "2026-11-05 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAGUSD_202610201200",
@@ -10226,7 +10579,10 @@
   "max_r": 0.25,
   "hit": "2026-10-22 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "AUDJPY_202610201200",
@@ -10280,7 +10636,8 @@
   "max_r": 1.2,
   "hit": "2026-10-22 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610201200",
@@ -10333,7 +10690,8 @@
   "max_r": 0.73,
   "hit": "2026-10-22 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610201200",
@@ -10386,7 +10744,8 @@
   "max_r": 0.83,
   "hit": "2026-10-22 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "HK50_202610201200",
@@ -10437,7 +10796,8 @@
   "max_r": 0.54,
   "hit": "2026-10-21 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDJPY_202610200000",
@@ -10491,7 +10851,10 @@
   "max_r": 0.78,
   "hit": "2026-10-20 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAUUSD_202610200000",
@@ -10544,7 +10907,10 @@
   "max_r": 0.04,
   "hit": "2026-10-20 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202610200000",
@@ -10598,7 +10964,8 @@
   "max_r": 5.17,
   "hit": "2026-10-20 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610191200",
@@ -10651,7 +11018,8 @@
   "max_r": 0.01,
   "hit": "2026-10-20 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "ETHUSD_202610190800",
@@ -10704,7 +11072,10 @@
   "max_r": 1.79,
   "hit": "2026-10-20 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202610190800",
@@ -10759,7 +11130,8 @@
   "max_r": 2.12,
   "hit": "2026-10-20 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURUSD_202610190400",
@@ -10812,7 +11184,10 @@
   "max_r": 0.0,
   "hit": "2026-10-20 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURJPY_202610190400",
@@ -10866,7 +11241,10 @@
   "max_r": 0.0,
   "hit": "2026-10-19 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USDJPY_202610190000",
@@ -10921,7 +11299,8 @@
   "max_r": 1.34,
   "hit": "2026-10-22 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "CADJPY_202610190000",
@@ -10975,7 +11354,8 @@
   "max_r": 2.74,
   "hit": "2026-10-22 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610182000",
@@ -11028,7 +11408,8 @@
   "max_r": 1.98,
   "hit": "2026-10-23 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "ETHUSD_202610172000",
@@ -11081,7 +11462,10 @@
   "max_r": 0.0,
   "hit": "2026-10-18 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202610171600",
@@ -11134,7 +11518,8 @@
   "max_r": 0.0,
   "hit": "2026-10-17 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610161200",
@@ -11185,7 +11570,10 @@
   "max_r": 3.72,
   "hit": "2026-10-21 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "CADJPY_202610160400",
@@ -11240,7 +11628,8 @@
   "max_r": 7.5,
   "hit": "2026-11-17 04:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDJPY_202610160000",
@@ -11296,7 +11685,10 @@
   "max_r": 0.65,
   "hit": "2026-10-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202610160000",
@@ -11351,7 +11743,8 @@
   "max_r": 1.11,
   "hit": "2026-10-18 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDCAD_202610160000",
@@ -11407,7 +11800,8 @@
   "max_r": 9.77,
   "hit": "2026-11-10 12:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610160000",
@@ -11463,7 +11857,8 @@
   "max_r": 0.44,
   "hit": "2026-10-19 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAGUSD_202610160000",
@@ -11516,7 +11911,8 @@
   "max_r": 0.12,
   "hit": "2026-10-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610160000",
@@ -11570,7 +11966,8 @@
   "max_r": 0.18,
   "hit": "2026-10-16 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610160000",
@@ -11624,7 +12021,8 @@
   "max_r": 0.09,
   "hit": "2026-10-16 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610160000",
@@ -11677,7 +12075,8 @@
   "max_r": 0.82,
   "hit": "2026-10-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "HK50_202610160000",
@@ -11731,7 +12130,8 @@
   "max_r": 0.0,
   "hit": "2026-10-16 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202610151200",
@@ -11788,7 +12188,8 @@
   "max_r": 2.5,
   "hit": "2026-10-20 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610151200",
@@ -11843,7 +12244,8 @@
   "max_r": 0.55,
   "hit": "2026-10-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610151200",
@@ -11898,7 +12300,8 @@
   "max_r": 0.55,
   "hit": "2026-10-16 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610151200",
@@ -11951,7 +12354,8 @@
   "max_r": 1.5,
   "hit": "2026-10-20 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610151200",
@@ -12006,7 +12410,8 @@
   "max_r": 0.95,
   "hit": "2026-10-24 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "ETHUSD_202610151200",
@@ -12061,7 +12466,8 @@
   "max_r": 0.74,
   "hit": "2026-10-24 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDUSD_202610150000",
@@ -12118,7 +12524,10 @@
   "max_r": 2.13,
   "hit": "2026-10-19 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPUSD_202610141200",
@@ -12173,7 +12582,10 @@
   "max_r": 0.09,
   "hit": "2026-10-15 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202610141200",
@@ -12230,7 +12642,10 @@
   "max_r": 1.06,
   "hit": "2026-10-20 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPJPY_202610141200",
@@ -12284,7 +12699,10 @@
   "max_r": 0.36,
   "hit": "2026-10-16 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 CADJPY，只做一筆"
  },
  {
   "id": "CADJPY_202610141200",
@@ -12339,7 +12757,10 @@
   "max_r": 1.42,
   "hit": "2026-10-16 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610141200",
@@ -12394,7 +12815,10 @@
   "max_r": 8.78,
   "hit": "",
   "result": "到 6R",
-  "done": false
+  "done": false,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 DE30，只做一筆"
  },
  {
   "id": "DE30_202610141200",
@@ -12448,7 +12872,10 @@
   "max_r": 1.18,
   "hit": "2026-10-15 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610141200",
@@ -12503,7 +12930,10 @@
   "max_r": 0.44,
   "hit": "2026-10-16 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 DE30，只做一筆"
  },
  {
   "id": "USOIL_202610140800",
@@ -12560,7 +12990,8 @@
   "max_r": 0.04,
   "hit": "2026-10-15 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAGUSD_202610140400",
@@ -12613,7 +13044,10 @@
   "max_r": 23.45,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610140000",
@@ -12668,7 +13102,8 @@
   "max_r": 0.07,
   "hit": "2026-10-14 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610140000",
@@ -12723,7 +13158,8 @@
   "max_r": 0.0,
   "hit": "2026-10-14 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610140000",
@@ -12777,7 +13213,8 @@
   "max_r": 1.4,
   "hit": "2026-10-14 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "HK50_202610140000",
@@ -12832,7 +13269,8 @@
   "max_r": 0.52,
   "hit": "2026-10-14 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USTEC_202610131200",
@@ -12887,7 +13325,8 @@
   "max_r": 1.69,
   "hit": "2026-10-14 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "CADJPY_202610130800",
@@ -12942,7 +13381,8 @@
   "max_r": 7.1,
   "hit": "2026-11-20 16:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDUSD_202610130000",
@@ -12998,7 +13438,8 @@
   "max_r": 4.88,
   "hit": "2026-10-15 00:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610130000",
@@ -13053,7 +13494,8 @@
   "max_r": 0.36,
   "hit": "2026-10-15 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610122000",
@@ -13108,7 +13550,10 @@
   "max_r": 0.0,
   "hit": "2026-10-13 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "HK50_202610120000",
@@ -13161,7 +13606,10 @@
   "max_r": 1.11,
   "hit": "2026-10-14 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202610112000",
@@ -13215,7 +13663,10 @@
   "max_r": 0.7,
   "hit": "2026-10-12 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202610110400",
@@ -13268,7 +13719,8 @@
   "max_r": 5.66,
   "hit": "2026-10-12 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610081600",
@@ -13322,7 +13774,10 @@
   "max_r": 0.01,
   "hit": "2026-10-09 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "XAUUSD_202610081600",
@@ -13376,7 +13831,8 @@
   "max_r": 3.04,
   "hit": "2026-10-14 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDCAD_202610080800",
@@ -13431,7 +13887,10 @@
   "max_r": 0.0,
   "hit": "2026-10-08 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USDCAD_202610080400",
@@ -13486,7 +13945,8 @@
   "max_r": 0.0,
   "hit": "2026-10-08 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPUSD_202610080000",
@@ -13540,7 +14000,10 @@
   "max_r": 2.59,
   "hit": "2026-10-08 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610080000",
@@ -13594,7 +14057,10 @@
   "max_r": 5.53,
   "hit": "2026-10-09 16:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USTEC_202610080000",
@@ -13648,7 +14114,10 @@
   "max_r": 42.89,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 US500，只做一筆"
  },
  {
   "id": "ETHUSD_202610080000",
@@ -13702,7 +14171,10 @@
   "max_r": 42.86,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "NZDUSD_202610080000",
@@ -13757,7 +14229,8 @@
   "max_r": 0.0,
   "hit": "2026-10-08 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDJPY_202610080000",
@@ -13811,7 +14284,8 @@
   "max_r": 1.63,
   "hit": "2026-10-08 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURJPY_202610070000",
@@ -13863,7 +14337,8 @@
   "max_r": 11.29,
   "hit": "2026-11-04 08:00",
   "result": "到 10R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USOIL_202610060400",
@@ -13916,7 +14391,10 @@
   "max_r": 1.12,
   "hit": "2026-10-06 20:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "DE30_202610060400",
@@ -13967,7 +14445,8 @@
   "max_r": 0.33,
   "hit": "2026-10-07 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610060000",
@@ -14019,7 +14498,10 @@
   "max_r": 0.63,
   "hit": "2026-10-06 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "ETHUSD_202610060000",
@@ -14071,7 +14553,10 @@
   "max_r": 0.36,
   "hit": "2026-10-06 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 BTCUSD，只做一筆"
  },
  {
   "id": "EURUSD_202610060000",
@@ -14124,7 +14609,8 @@
   "max_r": 0.0,
   "hit": "2026-10-06 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDUSD_202610060000",
@@ -14177,7 +14663,8 @@
   "max_r": 0.0,
   "hit": "2026-10-06 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "NZDUSD_202610060000",
@@ -14229,7 +14716,8 @@
   "max_r": 0.0,
   "hit": "2026-10-06 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURJPY_202610060000",
@@ -14282,7 +14770,8 @@
   "max_r": 4.42,
   "hit": "2026-10-07 04:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDJPY_202610060000",
@@ -14334,7 +14823,8 @@
   "max_r": 2.39,
   "hit": "2026-10-07 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDJPY_202610050800",
@@ -14389,7 +14879,10 @@
   "max_r": 0.47,
   "hit": "2026-10-08 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610050800",
@@ -14442,7 +14935,8 @@
   "max_r": 8.67,
   "hit": "2026-10-14 16:00",
   "result": "到 6R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USOIL_202610050800",
@@ -14496,7 +14990,8 @@
   "max_r": 0.0,
   "hit": "2026-10-05 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202610050000",
@@ -14549,7 +15044,10 @@
   "max_r": 0.47,
   "hit": "2026-10-05 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "CADJPY_202610042000",
@@ -14603,7 +15101,8 @@
   "max_r": 1.63,
   "hit": "2026-10-05 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "BTCUSD_202610021200",
@@ -14658,7 +15157,10 @@
   "max_r": 15.58,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPUSD_202610021200",
@@ -14713,7 +15215,8 @@
   "max_r": 0.61,
   "hit": "2026-10-05 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURJPY_202610021200",
@@ -14769,7 +15272,8 @@
   "max_r": 0.14,
   "hit": "2026-10-05 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USOIL_202610021200",
@@ -14826,7 +15330,8 @@
   "max_r": 0.43,
   "hit": "2026-10-06 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURUSD_202610020800",
@@ -14882,7 +15387,10 @@
   "max_r": 0.0,
   "hit": "2026-10-02 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "GBPUSD_202610020800",
@@ -14937,7 +15445,10 @@
   "max_r": 0.0,
   "hit": "2026-10-02 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 EURUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202610020000",
@@ -14994,7 +15505,8 @@
   "max_r": 3.44,
   "hit": "2026-10-15 08:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "NZDUSD_202610020000",
@@ -15051,7 +15563,8 @@
   "max_r": 1.38,
   "hit": "2026-10-05 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDCAD_202610011200",
@@ -15109,7 +15622,10 @@
   "max_r": 0.0,
   "hit": "2026-10-01 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610011200",
@@ -15165,7 +15681,10 @@
   "max_r": 0.08,
   "hit": "2026-10-02 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USOIL_202610011200",
@@ -15222,7 +15741,8 @@
   "max_r": 0.5,
   "hit": "2026-10-02 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "DE30_202610010800",
@@ -15276,7 +15796,8 @@
   "max_r": 0.87,
   "hit": "2026-10-08 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "AUDUSD_202610010400",
@@ -15335,7 +15856,10 @@
   "max_r": 0.0,
   "hit": "2026-10-01 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "US500_202610010400",
@@ -15391,7 +15915,10 @@
   "max_r": 0.83,
   "hit": "2026-10-02 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "BTCUSD_202610010400",
@@ -15447,7 +15974,10 @@
   "max_r": 0.26,
   "hit": "2026-10-01 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "ETHUSD_202610010400",
@@ -15503,7 +16033,10 @@
   "max_r": 0.11,
   "hit": "2026-10-02 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 BTCUSD，只做一筆"
  },
  {
   "id": "USOIL_202610010400",
@@ -15560,7 +16093,8 @@
   "max_r": 0.44,
   "hit": "2026-10-02 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPUSD_202610010000",
@@ -15618,7 +16152,10 @@
   "max_r": 5.29,
   "hit": "2026-10-06 08:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "NZDUSD_202610010000",
@@ -15677,7 +16214,10 @@
   "max_r": 3.58,
   "hit": "2026-10-02 12:00",
   "result": "到 3R，後來停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 GBPUSD，只做一筆"
  },
  {
   "id": "DE30_202610010000",
@@ -15732,7 +16272,10 @@
   "max_r": 1.61,
   "hit": "2026-10-01 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURJPY_202609302000",
@@ -15790,7 +16333,8 @@
   "max_r": 2.96,
   "hit": "2026-10-01 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "EURUSD_202609301200",
@@ -15848,7 +16392,10 @@
   "max_r": 10.96,
   "hit": "",
   "result": "到 10R",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USDCAD_202609301200",
@@ -15907,7 +16454,10 @@
   "max_r": 1.55,
   "hit": "2026-10-16 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 EURUSD，只做一筆"
  },
  {
   "id": "US500_202609300800",
@@ -15963,7 +16513,10 @@
   "max_r": 0.0,
   "hit": "2026-09-30 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "USTEC_202609300800",
@@ -16019,7 +16572,10 @@
   "max_r": 0.0,
   "hit": "2026-09-30 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 US500，只做一筆"
  },
  {
   "id": "EURUSD_202609300400",
@@ -16076,7 +16632,8 @@
   "max_r": 1.99,
   "hit": "2026-09-30 16:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPUSD_202609300400",
@@ -16133,7 +16690,8 @@
   "max_r": 1.13,
   "hit": "2026-10-01 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "USDCAD_202609300400",
@@ -16191,7 +16749,8 @@
   "max_r": 0.56,
   "hit": "2026-09-30 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "XAUUSD_202609300400",
@@ -16249,7 +16808,8 @@
   "max_r": 0.3,
   "hit": "2026-09-30 12:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "US500_202609300400",
@@ -16305,7 +16865,8 @@
   "max_r": 0.0,
   "hit": "2026-09-30 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null
  },
  {
   "id": "GBPUSD_202609300000",
@@ -16362,7 +16923,10 @@
   "max_r": 0.0,
   "hit": "2026-09-30 04:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 AUDUSD，只做一筆"
  },
  {
   "id": "AUDUSD_202609300000",
@@ -16421,7 +16985,10 @@
   "max_r": 2.55,
   "hit": "2026-10-12 00:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "建議",
+  "skip_why": ""
  },
  {
   "id": "EURUSD_202609291200",
@@ -16478,6 +17045,9 @@
   "max_r": 1.04,
   "hit": "2026-09-30 08:00",
   "result": "停損",
-  "done": true
+  "done": true,
+  "ext_atr": null,
+  "advice": "不建議",
+  "skip_why": "同組已有 AUDUSD，只做一筆"
  }
 ]
