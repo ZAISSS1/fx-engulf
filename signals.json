@@ -50,7 +50,11 @@
   "ext_atr": 2.71,
   "created": "2026-11-24 12:05",
   "advice": "建議",
-  "skip_why": ""
+  "skip_why": "",
+  "max_r": 0.35,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "USOIL_202611240000",
@@ -104,7 +108,11 @@
   "ext_atr": 8.23,
   "created": "2026-11-24 12:05",
   "advice": "不建議",
-  "skip_why": "追太遠（MA20 離 MA200 8.2 ATR）"
+  "skip_why": "追太遠（MA20 離 MA200 8.2 ATR）",
+  "max_r": 0.79,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "XAGUSD_202611240000",
@@ -156,7 +164,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": 8.17,
-  "created": "2026-11-24 12:05"
+  "created": "2026-11-24 12:05",
+  "max_r": 0.4,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "XAGUSD_202611231200",
@@ -2494,7 +2506,7 @@
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 01:24",
   "tp10": 71.132,
-  "max_r": 4.61,
+  "max_r": 4.98,
   "hit": "",
   "result": "到 3R",
   "done": false,
@@ -6027,7 +6039,7 @@
   ],
   "source": "歷史檔（可能延遲）",
   "created": "2026-11-23 07:16",
-  "max_r": 5.33,
+  "max_r": 5.52,
   "hit": "",
   "result": "到 3R",
   "done": false,
