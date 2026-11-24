@@ -51,7 +51,11 @@
   "ext_atr": 9.82,
   "created": "2026-11-25 00:05",
   "advice": "不建議",
-  "skip_why": "追太遠（MA20 離 MA200 9.8 ATR）"
+  "skip_why": "追太遠（MA20 離 MA200 9.8 ATR）",
+  "max_r": 0.16,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "ETHUSD_202611241200",
@@ -106,7 +110,11 @@
   "ext_atr": 9.39,
   "created": "2026-11-25 00:05",
   "advice": "不建議",
-  "skip_why": "追太遠（MA20 離 MA200 9.4 ATR）"
+  "skip_why": "追太遠（MA20 離 MA200 9.4 ATR）",
+  "max_r": 0.45,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "XAUUSD_202611241200",
@@ -160,7 +168,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": 8.85,
-  "created": "2026-11-25 00:05"
+  "created": "2026-11-25 00:05",
+  "max_r": 0.21,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "AUDUSD_202611240800",
@@ -274,7 +286,7 @@
   "source": "MT4 匯出",
   "ext_atr": -7.68,
   "created": "2026-11-24 20:05",
-  "max_r": 0.96,
+  "max_r": 1.05,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -331,7 +343,7 @@
   "created": "2026-11-24 12:05",
   "advice": "建議",
   "skip_why": "",
-  "max_r": 3.09,
+  "max_r": 3.56,
   "hit": "",
   "result": "到 3R",
   "done": false
@@ -445,7 +457,7 @@
   "source": "MT4 匯出",
   "ext_atr": 8.17,
   "created": "2026-11-24 12:05",
-  "max_r": 1.25,
+  "max_r": 1.41,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -3181,7 +3193,7 @@
   "events": [],
   "source": "MT4 匯出",
   "created": "2026-11-23 09:35",
-  "max_r": 6.62,
+  "max_r": 6.65,
   "hit": "",
   "result": "到 6R",
   "done": false,
