@@ -1,5 +1,58 @@
 [
  {
+  "id": "ETHUSD_202611251200",
+  "sym": "ETHUSD",
+  "tf": "H4",
+  "time": "2026-11-25 12:00",
+  "side": "多",
+  "pattern": "紅吞噬",
+  "trend": "逆勢",
+  "ma": "MA20下・MA60下・MA200下",
+  "prev": "1638.9→1636.8（陰）",
+  "entry": 1646.27,
+  "sl": 1606.5,
+  "sl_pips": 39.77,
+  "sl_unit": "點",
+  "tp3": 1765.58,
+  "tp5": 1845.12,
+  "tp6": 1884.89,
+  "tp10": 2043.97,
+  "digits": 2,
+  "lots": {
+   "20": {
+    "lot": 0.5,
+    "risk": 19.88
+   },
+   "50": {
+    "lot": 1.25,
+    "risk": 49.71
+   },
+   "100": {
+    "lot": 2.51,
+    "risk": 99.82
+   }
+  },
+  "loss_per_lot": 39.77,
+  "min_risk": 0.4,
+  "cost_note": "未計手續費",
+  "verdict": "不利",
+  "strength": "強",
+  "ratio": -0.5,
+  "support": [
+   "美2Y殖利率下降",
+   "美10Y殖利率下降"
+  ],
+  "against": [
+   "VIX恐慌指數上升",
+   "美元指數上升",
+   "高收益債利差上升"
+  ],
+  "events": [],
+  "source": "MT4 匯出",
+  "ext_atr": -9.53,
+  "created": "2026-11-26 00:05"
+ },
+ {
   "id": "USOIL_202611250800",
   "sym": "USOIL",
   "tf": "H4",
@@ -49,7 +102,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -8.2,
-  "created": "2026-11-25 20:05"
+  "created": "2026-11-25 20:05",
+  "max_r": 1.5,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "USDJPY_202611250400",
@@ -106,7 +163,7 @@
   "created": "2026-11-25 16:05",
   "advice": "不建議",
   "skip_why": "同組已有 CADJPY，只做一筆",
-  "max_r": 0.07,
+  "max_r": 0.68,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -165,9 +222,9 @@
   "advice": "建議",
   "skip_why": "",
   "max_r": 0.03,
-  "hit": "",
-  "result": "進行中",
-  "done": false
+  "hit": "2026-11-25 12:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "XAGUSD_202611250000",
@@ -220,9 +277,9 @@
   "source": "MT4 匯出",
   "ext_atr": 10.24,
   "created": "2026-11-25 12:05",
-  "max_r": 2.03,
+  "max_r": 3.66,
   "hit": "",
-  "result": "進行中",
+  "result": "到 3R",
   "done": false
  },
  {
@@ -278,7 +335,7 @@
   "created": "2026-11-25 00:05",
   "advice": "不建議",
   "skip_why": "追太遠（MA20 離 MA200 9.8 ATR）",
-  "max_r": 0.99,
+  "max_r": 1.67,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -337,7 +394,7 @@
   "created": "2026-11-25 00:05",
   "advice": "不建議",
   "skip_why": "追太遠（MA20 離 MA200 9.4 ATR）",
-  "max_r": 1.46,
+  "max_r": 2.26,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -395,7 +452,7 @@
   "source": "MT4 匯出",
   "ext_atr": 8.85,
   "created": "2026-11-25 00:05",
-  "max_r": 1.09,
+  "max_r": 1.84,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -569,7 +626,7 @@
   "created": "2026-11-24 12:05",
   "advice": "建議",
   "skip_why": "",
-  "max_r": 3.56,
+  "max_r": 5.43,
   "hit": "",
   "result": "到 3R",
   "done": false
@@ -683,9 +740,9 @@
   "source": "MT4 匯出",
   "ext_atr": 8.17,
   "created": "2026-11-24 12:05",
-  "max_r": 2.44,
+  "max_r": 3.29,
   "hit": "",
-  "result": "進行中",
+  "result": "到 3R",
   "done": false
  },
  {
@@ -1479,7 +1536,7 @@
   "events": [],
   "source": "MT4 匯出",
   "created": "2026-11-23 09:35",
-  "max_r": 6.18,
+  "max_r": 7.7,
   "hit": "",
   "result": "到 6R",
   "done": false,
@@ -3419,7 +3476,7 @@
   "events": [],
   "source": "MT4 匯出",
   "created": "2026-11-23 09:35",
-  "max_r": 7.76,
+  "max_r": 8.68,
   "hit": "",
   "result": "到 6R",
   "done": false,
@@ -4285,9 +4342,9 @@
   "created": "2026-11-23 01:23",
   "tp10": 1.46341,
   "max_r": 3.32,
-  "hit": "",
-  "result": "到 3R",
-  "done": false,
+  "hit": "2026-11-25 12:00",
+  "result": "到 3R，後來停損",
+  "done": true,
   "ext_atr": 2.84,
   "advice": "建議",
   "skip_why": ""
@@ -16974,67 +17031,5 @@
   "ext_atr": null,
   "advice": "建議",
   "skip_why": ""
- },
- {
-  "id": "NZDUSD_202610010000",
-  "sym": "NZDUSD",
-  "tf": "H4",
-  "time": "2026-10-01 00:00",
-  "side": "空",
-  "pattern": "綠吞噬",
-  "trend": "順勢",
-  "ma": "MA20下・MA60下・MA200下",
-  "prev": "0.56332→0.56339（陽）",
-  "entry": 0.56258,
-  "sl": 0.5637,
-  "sl_pips": 11.2,
-  "sl_unit": "pip",
-  "tp3": 0.55922,
-  "tp6": 0.55586,
-  "tp10": 0.55138,
-  "digits": 5,
-  "lots": {
-   "20": {
-    "lot": 0.16,
-    "risk": 19.04
-   },
-   "50": {
-    "lot": 0.42,
-    "risk": 49.98
-   },
-   "100": {
-    "lot": 0.84,
-    "risk": 99.96
-   }
-  },
-  "loss_per_lot": 119.0,
-  "min_risk": 1.19,
-  "cost_note": "",
-  "verdict": "有利",
-  "strength": "強",
-  "ratio": 0.8,
-  "support": [
-   "美2Y殖利率上升",
-   "美10Y殖利率上升",
-   "VIX恐慌指數上升",
-   "美元指數上升",
-   "高收益債利差上升"
-  ],
-  "against": [
-   "原油上升"
-  ],
-  "events": [
-   "RBA 09/29 04:30 GMT（之前 48 小時）",
-   "NFP 10/02 12:30 GMT（之後 32 小時）"
-  ],
-  "source": "歷史檔（可能延遲）",
-  "created": "2026-11-23 06:47",
-  "max_r": 3.58,
-  "hit": "2026-10-02 12:00",
-  "result": "到 3R，後來停損",
-  "done": true,
-  "ext_atr": null,
-  "advice": "不建議",
-  "skip_why": "同組已有 GBPUSD，只做一筆"
  }
 ]
