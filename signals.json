@@ -52,7 +52,7 @@
   "created": "2026-11-25 00:05",
   "advice": "不建議",
   "skip_why": "追太遠（MA20 離 MA200 9.8 ATR）",
-  "max_r": 0.16,
+  "max_r": 0.19,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -169,7 +169,7 @@
   "source": "MT4 匯出",
   "ext_atr": 8.85,
   "created": "2026-11-25 00:05",
-  "max_r": 0.21,
+  "max_r": 0.29,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -457,7 +457,7 @@
   "source": "MT4 匯出",
   "ext_atr": 8.17,
   "created": "2026-11-24 12:05",
-  "max_r": 1.41,
+  "max_r": 1.46,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -3193,7 +3193,7 @@
   "events": [],
   "source": "MT4 匯出",
   "created": "2026-11-23 09:35",
-  "max_r": 6.65,
+  "max_r": 6.69,
   "hit": "",
   "result": "到 6R",
   "done": false,
