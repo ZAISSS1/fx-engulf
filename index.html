@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>吞噬K線吞噬線工具</title>
-<meta name="description" content="Exness MT4 19 個商品全包吞噬 K 線（H1／H4／日／週／月可選，預設 H4＋日週月），訊號出現當下的新聞有利／不利評估，每小時更新。">
+<meta name="description" content="Exness MT4 19 個商品全包吞噬 K 線（H1／H4／日／週／月可選，預設 H1＋H4＋日週月），訊號出現當下的新聞有利／不利評估，每小時更新。">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -175,14 +175,14 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;line-height:1.7;border-to
 
   <section class="tfbox" id="tfbox">
     <div class="tfhead" id="tfhead">
-      <div><b>商品週期</b>　<span id="tfsum">預設 H4＋日／週／月</span></div>
+      <div><b>商品週期</b>　<span id="tfsum">預設 H1＋H4＋日／週／月</span></div>
       <div class="arrow">▾</div>
     </div>
     <div class="tfbody">
       <div class="tfgrid" id="tfgrid"></div>
       <div class="tfact">
         <button class="primary" id="tfsave">儲存設定</button>
-        <button id="tfreset">全部改回預設（H4＋日週月）</button>
+        <button id="tfreset">全部改回預設（H1＋H4＋日週月）</button>
         <small id="tfnote">點週期就能新增或取消（每個商品可以同時看好幾個週期）。按「儲存設定」會打開 GitHub，再按綠色「Commit changes」，下一次整點掃描就生效。</small>
       </div>
     </div>
@@ -252,7 +252,7 @@ const SIDE = {'多': '<span class="up">做多</span>', '空': '<span class="down
 const STR = v => `<span class="st st-${v === '強' ? 's' : v === '中' ? 'm' : 'w'}">${v || '弱'}</span>`;
 let ALL = [], STATUS = {}, F = 'all', TFF = 'all', CFG = {tfs: {}, options: ['H1', 'H4', 'D1', 'W1', 'MN']}, DRAFT = {};
 const TFN = {H1: 'H1', H4: 'H4', D1: '日線', W1: '週線', MN: '月線'};
-const DEF = ['H4', 'D1', 'W1', 'MN'];
+const DEF = ['H1', 'H4', 'D1', 'W1', 'MN'];
 const tfn = t => TFN[t || 'H4'] || t;
 const LS = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 
@@ -282,7 +282,7 @@ function tfSummary(t){
   const c = {}; Object.values(t).forEach(v => v.forEach(x => c[x] = (c[x] || 0) + 1));
   const n = Object.keys(t).length;
   const allDef = Object.values(t).every(v => v.join() === DEF.join());
-  return allDef ? `全部 ${n} 個商品都看 H4＋日／週／月` : CFG.options.filter(x => c[x]).map(x => `${tfn(x)} ${c[x]} 個`).join('・');
+  return allDef ? `全部 ${n} 個商品都看 H1＋H4＋日／週／月` : CFG.options.filter(x => c[x]).map(x => `${tfn(x)} ${c[x]} 個`).join('・');
 }
 function drawTf(){
   $('#tfgrid').innerHTML = Object.keys(DRAFT).map(sym => `<div class="tfrow"><b>${sym}</b><div class="pills">` +
@@ -303,7 +303,7 @@ $('#tfsave').onclick = () => {
   if (JSON.stringify(DRAFT) === JSON.stringify(CFG.tfs)) return alert('設定沒有變更');
   const d = new Date(), p = n => String(n).padStart(2, '0');
   const name = `settings/tf_${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}.json`;
-  const body = JSON.stringify({ver: 2, tfs: DRAFT}, null, 1);
+  const body = JSON.stringify({ver: 3, tfs: DRAFT}, null, 1);
   window.open(`https://github.com/${REPO}/new/main?filename=${encodeURIComponent(name)}&value=${encodeURIComponent(body)}`, '_blank');
   $('#tfnote').textContent = '已打開 GitHub：按綠色「Commit changes」就完成，下一次整點掃描生效（網頁上方「目前」會跟著更新）。';
 };

@@ -1,115 +1,134 @@
 {
- "ver": 2,
+ "ver": 3,
  "tfs": {
   "EURUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "GBPUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "AUDUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "NZDUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "USDCAD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "USDJPY": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "EURJPY": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "GBPJPY": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "AUDJPY": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "CADJPY": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "XAUUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "XAGUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "US500": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "USTEC": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "DE30": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "HK50": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "USOIL": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "BTCUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
    "MN"
   ],
   "ETHUSD": [
+   "H1",
    "H4",
    "D1",
    "W1",
