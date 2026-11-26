@@ -49,7 +49,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -4.22,
-  "created": "2026-11-26 04:05"
+  "created": "2026-11-26 04:05",
+  "max_r": 0.06,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "DE30_202611251600",
@@ -100,7 +104,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -3.79,
-  "created": "2026-11-26 04:05"
+  "created": "2026-11-26 04:05",
+  "max_r": 0.18,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "ETHUSD_202611251200",
@@ -210,7 +218,7 @@
   "source": "MT4 匯出",
   "ext_atr": -8.2,
   "created": "2026-11-25 20:05",
-  "max_r": 1.55,
+  "max_r": 1.82,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -385,9 +393,9 @@
   "ext_atr": 10.24,
   "created": "2026-11-25 12:05",
   "max_r": 3.66,
-  "hit": "",
-  "result": "到 3R",
-  "done": false
+  "hit": "2026-11-25 20:00",
+  "result": "到 3R，後來停損",
+  "done": true
  },
  {
   "id": "XAGUSD_202611241200",
