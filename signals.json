@@ -900,7 +900,7 @@
   "source": "歷史檔（可能延遲）",
   "ext_atr": 1.58,
   "created": "2026-11-27 00:34",
-  "max_r": 0.37,
+  "max_r": 1.8,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -1244,9 +1244,9 @@
   "source": "歷史檔（可能延遲）",
   "ext_atr": -5.99,
   "created": "2026-11-27 00:34",
-  "max_r": 0.66,
+  "max_r": 8.73,
   "hit": "",
-  "result": "進行中",
+  "result": "到 6R",
   "done": false
  },
  {
