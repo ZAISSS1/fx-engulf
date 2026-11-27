@@ -52,7 +52,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": 0.94,
-  "created": "2026-11-27 20:05"
+  "created": "2026-11-27 20:05",
+  "max_r": 0.16,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "ETHUSD_H1_202611271100",
@@ -105,7 +109,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -0.88,
-  "created": "2026-11-27 20:05"
+  "created": "2026-11-27 20:05",
+  "max_r": 0.72,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "DE30_H1_202611270800",
