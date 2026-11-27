@@ -48,7 +48,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -4.83,
-  "created": "2026-11-27 17:05"
+  "created": "2026-11-27 17:05",
+  "max_r": 0.21,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "USDJPY_H1_202611270700",
@@ -219,9 +223,9 @@
   "ext_atr": -0.53,
   "created": "2026-11-27 14:05",
   "max_r": 0.53,
-  "hit": "",
-  "result": "進行中",
-  "done": false
+  "hit": "2026-11-27 09:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "NZDUSD_H1_202611270300",
@@ -276,7 +280,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.67,
   "created": "2026-11-27 12:05",
-  "max_r": 0.24,
+  "max_r": 0.26,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -448,7 +452,7 @@
   "source": "MT4 匯出",
   "ext_atr": -8.44,
   "created": "2026-11-27 10:05",
-  "max_r": 2.38,
+  "max_r": 2.5,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -507,9 +511,9 @@
   "ext_atr": 0.44,
   "created": "2026-11-27 10:05",
   "max_r": 1.16,
-  "hit": "",
-  "result": "進行中",
-  "done": false
+  "hit": "2026-11-27 09:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "NZDUSD_H1_202611270100",
@@ -621,7 +625,7 @@
   "source": "MT4 匯出",
   "ext_atr": -1.49,
   "created": "2026-11-27 10:05",
-  "max_r": 2.04,
+  "max_r": 2.62,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -1080,7 +1084,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -7.85,
-  "created": "2026-11-27 12:05"
+  "created": "2026-11-27 12:05",
+  "max_r": 1.13,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "GBPJPY_H1_202611270000",
@@ -1419,7 +1427,7 @@
   "source": "MT4 匯出",
   "ext_atr": -6.7,
   "created": "2026-11-27 09:19",
-  "max_r": 8.07,
+  "max_r": 8.96,
   "hit": "",
   "result": "到 6R",
   "done": false
@@ -2855,10 +2863,10 @@
   "source": "歷史檔（可能延遲）",
   "ext_atr": -5.99,
   "created": "2026-11-27 00:34",
-  "max_r": 9.93,
+  "max_r": 10.58,
   "hit": "",
-  "result": "到 6R",
-  "done": false
+  "result": "到 10R",
+  "done": true
  },
  {
   "id": "XAGUSD_202611231200",
