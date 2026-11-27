@@ -50,7 +50,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": 0.53,
-  "created": "2026-11-28 04:05"
+  "created": "2026-11-28 04:05",
+  "max_r": 0.01,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "GBPUSD_202611271200",
