@@ -1,5 +1,113 @@
 [
  {
+  "id": "GBPUSD_202611271200",
+  "sym": "GBPUSD",
+  "tf": "H4",
+  "time": "2026-11-27 12:00",
+  "side": "空",
+  "pattern": "綠吞噬",
+  "trend": "均線分歧",
+  "ma": "MA20上・MA60下・MA200下",
+  "prev": "1.3121→1.313（陽）",
+  "entry": 1.3105,
+  "sl": 1.31351,
+  "sl_pips": 30.1,
+  "sl_unit": "pip",
+  "tp3": 1.30147,
+  "tp5": 1.29545,
+  "tp6": 1.29244,
+  "tp10": 1.2804,
+  "digits": 5,
+  "lots": {
+   "20": {
+    "lot": 0.06,
+    "risk": 18.48
+   },
+   "50": {
+    "lot": 0.16,
+    "risk": 49.28
+   },
+   "100": {
+    "lot": 0.32,
+    "risk": 98.56
+   }
+  },
+  "loss_per_lot": 308.0,
+  "min_risk": 3.08,
+  "cost_note": "",
+  "verdict": "有利",
+  "strength": "中",
+  "ratio": 0.38,
+  "support": [
+   "VIX恐慌指數上升",
+   "美元指數上升",
+   "高收益債利差上升",
+   "美英2Y利差上升"
+  ],
+  "against": [
+   "美2Y殖利率下降",
+   "美10Y殖利率下降"
+  ],
+  "events": [],
+  "source": "MT4 匯出",
+  "ext_atr": 7.06,
+  "created": "2026-11-28 00:05",
+  "advice": "不建議",
+  "skip_why": "追太遠（MA20 離 MA200 7.1 ATR）"
+ },
+ {
+  "id": "CADJPY_202611271200",
+  "sym": "CADJPY",
+  "tf": "H4",
+  "time": "2026-11-27 12:00",
+  "side": "多",
+  "pattern": "紅吞噬",
+  "trend": "均線分歧",
+  "ma": "MA20上・MA60上・MA200下",
+  "prev": "111.94→111.94（陰）",
+  "entry": 111.969,
+  "sl": 111.877,
+  "sl_pips": 9.2,
+  "sl_unit": "pip",
+  "tp3": 112.245,
+  "tp5": 112.429,
+  "tp6": 112.521,
+  "tp10": 112.889,
+  "digits": 3,
+  "lots": {
+   "20": {
+    "lot": 0.3,
+    "risk": 19.4
+   },
+   "50": {
+    "lot": 0.77,
+    "risk": 49.78
+   },
+   "100": {
+    "lot": 1.54,
+    "risk": 99.56
+   }
+  },
+  "loss_per_lot": 64.65,
+  "min_risk": 0.65,
+  "cost_note": "",
+  "verdict": "不利",
+  "strength": "強",
+  "ratio": -1.0,
+  "support": [],
+  "against": [
+   "美2Y殖利率下降",
+   "美10Y殖利率下降",
+   "VIX恐慌指數上升",
+   "原油下降",
+   "高收益債利差上升"
+  ],
+  "events": [],
+  "source": "MT4 匯出",
+  "ext_atr": -1.33,
+  "created": "2026-11-28 00:05"
+ },
+ {
   "id": "AUDUSD_H1_202611271100",
   "sym": "AUDUSD",
   "tf": "H1",
@@ -53,9 +161,9 @@
   "source": "MT4 匯出",
   "ext_atr": 0.94,
   "created": "2026-11-27 20:05",
-  "max_r": 2.82,
+  "max_r": 4.01,
   "hit": "",
-  "result": "進行中",
+  "result": "到 3R",
   "done": false
  },
  {
@@ -110,10 +218,10 @@
   "source": "MT4 匯出",
   "ext_atr": -0.88,
   "created": "2026-11-27 20:05",
-  "max_r": 9.09,
+  "max_r": 11.33,
   "hit": "",
-  "result": "到 6R",
-  "done": false
+  "result": "到 10R",
+  "done": true
  },
  {
   "id": "DE30_H1_202611270800",
@@ -396,7 +504,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.67,
   "created": "2026-11-27 12:05",
-  "max_r": 0.86,
+  "max_r": 1.46,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -973,7 +1081,7 @@
   "source": "MT4 匯出",
   "ext_atr": -8.06,
   "created": "2026-11-27 12:05",
-  "max_r": 0.66,
+  "max_r": 0.67,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -1089,9 +1197,9 @@
   "ext_atr": -5.06,
   "created": "2026-11-27 12:05",
   "max_r": 0.99,
-  "hit": "",
-  "result": "進行中",
-  "done": false
+  "hit": "2026-11-27 12:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "GBPJPY_202611270000",
@@ -16954,119 +17062,6 @@
   "max_r": 1.69,
   "hit": "2026-10-14 12:00",
   "result": "停損",
-  "done": true,
-  "ext_atr": null
- },
- {
-  "id": "CADJPY_202610130800",
-  "sym": "CADJPY",
-  "tf": "H4",
-  "time": "2026-10-13 08:00",
-  "side": "多",
-  "pattern": "紅吞噬",
-  "trend": "逆勢",
-  "ma": "MA20下・MA60上・MA200下",
-  "prev": "110.97→110.92（陰）",
-  "entry": 111.045,
-  "sl": 110.676,
-  "sl_pips": 36.9,
-  "sl_unit": "pip",
-  "tp3": 112.152,
-  "tp6": 113.259,
-  "tp10": 114.735,
-  "digits": 3,
-  "lots": {
-   "20": {
-    "lot": 0.08,
-    "risk": 19.26
-   },
-   "50": {
-    "lot": 0.2,
-    "risk": 48.15
-   },
-   "100": {
-    "lot": 0.41,
-    "risk": 98.71
-   }
-  },
-  "loss_per_lot": 240.76,
-  "min_risk": 2.41,
-  "cost_note": "",
-  "verdict": "不利",
-  "strength": "弱",
-  "ratio": -0.12,
-  "support": [
-   "VIX恐慌指數下降"
-  ],
-  "against": [
-   "原油下降",
-   "高收益債利差上升"
-  ],
-  "events": [
-   "CPI 10/14 12:30 GMT（之後 24 小時）"
-  ],
-  "source": "歷史檔（可能延遲）",
-  "created": "2026-11-23 06:52",
-  "max_r": 7.1,
-  "hit": "2026-11-20 16:00",
-  "result": "到 6R，後來停損",
-  "done": true,
-  "ext_atr": null
- },
- {
-  "id": "AUDUSD_202610130000",
-  "sym": "AUDUSD",
-  "tf": "H4",
-  "time": "2026-10-13 00:00",
-  "side": "多",
-  "pattern": "紅吞噬",
-  "trend": "逆勢",
-  "ma": "MA20下・MA60下・MA200下",
-  "prev": "0.69571→0.69557（陰）",
-  "entry": 0.69605,
-  "sl": 0.69497,
-  "sl_pips": 10.8,
-  "sl_unit": "pip",
-  "tp3": 0.69929,
-  "tp6": 0.70253,
-  "tp10": 0.70685,
-  "digits": 5,
-  "lots": {
-   "20": {
-    "lot": 0.17,
-    "risk": 19.55
-   },
-   "50": {
-    "lot": 0.43,
-    "risk": 49.45
-   },
-   "100": {
-    "lot": 0.86,
-    "risk": 98.9
-   }
-  },
-  "loss_per_lot": 115.0,
-  "min_risk": 1.15,
-  "cost_note": "",
-  "verdict": "不利",
-  "strength": "弱",
-  "ratio": -0.23,
-  "support": [
-   "VIX恐慌指數下降"
-  ],
-  "against": [
-   "美元指數上升",
-   "原油下降",
-   "高收益債利差上升"
-  ],
-  "events": [
-   "CPI 10/14 12:30 GMT（之後 32 小時）"
-  ],
-  "source": "歷史檔（可能延遲）",
-  "created": "2026-11-23 06:47",
-  "max_r": 4.88,
-  "hit": "2026-10-15 00:00",
-  "result": "到 3R，後來停損",
   "done": true,
   "ext_atr": null
  }
