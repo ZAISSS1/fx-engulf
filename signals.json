@@ -53,7 +53,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.94,
   "created": "2026-11-27 20:05",
-  "max_r": 1.92,
+  "max_r": 2.82,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -110,9 +110,9 @@
   "source": "MT4 匯出",
   "ext_atr": -0.88,
   "created": "2026-11-27 20:05",
-  "max_r": 1.11,
+  "max_r": 9.09,
   "hit": "",
-  "result": "進行中",
+  "result": "到 6R",
   "done": false
  },
  {
@@ -166,9 +166,9 @@
   "ext_atr": -4.83,
   "created": "2026-11-27 17:05",
   "max_r": 0.21,
-  "hit": "",
-  "result": "進行中",
-  "done": false
+  "hit": "2026-11-27 14:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "USDJPY_H1_202611270700",
