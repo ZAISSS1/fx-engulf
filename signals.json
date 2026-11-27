@@ -1,5 +1,56 @@
 [
  {
+  "id": "DE30_H1_202611270800",
+  "sym": "DE30",
+  "tf": "H1",
+  "time": "2026-11-27 08:00",
+  "side": "多",
+  "pattern": "紅吞噬",
+  "trend": "均線分歧",
+  "ma": "MA20上・MA60上・MA200下",
+  "prev": "25362→25357（陰）",
+  "entry": 25453.7,
+  "sl": 25336.7,
+  "sl_pips": 117.0,
+  "sl_unit": "點",
+  "tp3": 25804.7,
+  "tp5": 26038.7,
+  "tp6": 26155.7,
+  "tp10": 26623.7,
+  "digits": 2,
+  "lots": {
+   "20": {
+    "lot": 0.15,
+    "risk": 19.25
+   },
+   "50": {
+    "lot": 0.38,
+    "risk": 48.76
+   },
+   "100": {
+    "lot": 0.77,
+    "risk": 98.8
+   }
+  },
+  "loss_per_lot": 128.31,
+  "min_risk": 1.28,
+  "cost_note": "未計手續費",
+  "verdict": "不利",
+  "strength": "強",
+  "ratio": -0.6,
+  "support": [
+   "美10Y殖利率下降"
+  ],
+  "against": [
+   "VIX恐慌指數上升",
+   "高收益債利差上升"
+  ],
+  "events": [],
+  "source": "MT4 匯出",
+  "ext_atr": -4.83,
+  "created": "2026-11-27 17:05"
+ },
+ {
   "id": "USDJPY_H1_202611270700",
   "sym": "USDJPY",
   "tf": "H1",
@@ -51,7 +102,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -0.42,
-  "created": "2026-11-27 16:05"
+  "created": "2026-11-27 16:05",
+  "max_r": 0.0,
+  "hit": "2026-11-27 08:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "GBPJPY_H1_202611270700",
@@ -104,7 +159,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": 0.57,
-  "created": "2026-11-27 16:05"
+  "created": "2026-11-27 16:05",
+  "max_r": 0.0,
+  "hit": "2026-11-27 08:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "NZDUSD_H1_202611270500",
@@ -389,7 +448,7 @@
   "source": "MT4 匯出",
   "ext_atr": -8.44,
   "created": "2026-11-27 10:05",
-  "max_r": 1.98,
+  "max_r": 2.38,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -562,7 +621,7 @@
   "source": "MT4 匯出",
   "ext_atr": -1.49,
   "created": "2026-11-27 10:05",
-  "max_r": 1.65,
+  "max_r": 2.04,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -1360,7 +1419,7 @@
   "source": "MT4 匯出",
   "ext_atr": -6.7,
   "created": "2026-11-27 09:19",
-  "max_r": 6.92,
+  "max_r": 8.07,
   "hit": "",
   "result": "到 6R",
   "done": false
@@ -1762,7 +1821,7 @@
   "source": "MT4 匯出",
   "ext_atr": -3.64,
   "created": "2026-11-27 00:34",
-  "max_r": 4.34,
+  "max_r": 4.65,
   "hit": "",
   "result": "到 3R",
   "done": false
@@ -2796,7 +2855,7 @@
   "source": "歷史檔（可能延遲）",
   "ext_atr": -5.99,
   "created": "2026-11-27 00:34",
-  "max_r": 9.5,
+  "max_r": 9.93,
   "hit": "",
   "result": "到 6R",
   "done": false
@@ -16995,62 +17054,6 @@
   "created": "2026-11-23 07:18",
   "max_r": 0.0,
   "hit": "2026-10-13 00:00",
-  "result": "停損",
-  "done": true,
-  "ext_atr": null,
-  "advice": "建議",
-  "skip_why": ""
- },
- {
-  "id": "HK50_202610120000",
-  "sym": "HK50",
-  "tf": "H4",
-  "time": "2026-10-12 00:00",
-  "side": "空",
-  "pattern": "綠吞噬",
-  "trend": "均線分歧",
-  "ma": "MA20上・MA60上・MA200下",
-  "prev": "24328→24359（陽）",
-  "entry": 24216.0,
-  "sl": 24441.4,
-  "sl_pips": 225.4,
-  "sl_unit": "點",
-  "tp3": 23539.8,
-  "tp6": 22863.6,
-  "tp10": 21962.0,
-  "digits": 2,
-  "lots": {
-   "20": {
-    "lot": 0.69,
-    "risk": 19.94
-   },
-   "50": {
-    "lot": 1.73,
-    "risk": 49.99
-   },
-   "100": {
-    "lot": 3.46,
-    "risk": 99.99
-   }
-  },
-  "loss_per_lot": 28.9,
-  "min_risk": 0.29,
-  "cost_note": "未計手續費、合約規格待 MT4 匯出確認",
-  "verdict": "有利",
-  "strength": "弱",
-  "ratio": 0.17,
-  "support": [
-   "美元指數上升",
-   "高收益債利差上升"
-  ],
-  "against": [
-   "VIX恐慌指數下降"
-  ],
-  "events": [],
-  "source": "歷史檔（可能延遲）",
-  "created": "2026-11-23 07:12",
-  "max_r": 1.11,
-  "hit": "2026-10-14 04:00",
   "result": "停損",
   "done": true,
   "ext_atr": null,
