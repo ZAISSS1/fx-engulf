@@ -161,7 +161,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.94,
   "created": "2026-11-27 20:05",
-  "max_r": 4.01,
+  "max_r": 4.2,
   "hit": "",
   "result": "到 3R",
   "done": false
@@ -504,7 +504,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.67,
   "created": "2026-11-27 12:05",
-  "max_r": 1.46,
+  "max_r": 1.54,
   "hit": "",
   "result": "進行中",
   "done": false
