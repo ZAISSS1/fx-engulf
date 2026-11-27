@@ -51,7 +51,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": 0.67,
-  "created": "2026-11-27 12:05"
+  "created": "2026-11-27 12:05",
+  "max_r": 0.24,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "USDCAD_H1_202611270300",
@@ -105,7 +109,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -7.02,
-  "created": "2026-11-27 12:05"
+  "created": "2026-11-27 12:05",
+  "max_r": 0.36,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "CADJPY_H1_202611270300",
@@ -157,7 +165,11 @@
   "events": [],
   "source": "MT4 匯出",
   "ext_atr": -7.72,
-  "created": "2026-11-27 12:05"
+  "created": "2026-11-27 12:05",
+  "max_r": 0.54,
+  "hit": "",
+  "result": "進行中",
+  "done": false
  },
  {
   "id": "XAUUSD_H1_202611270100",
@@ -212,7 +224,7 @@
   "source": "MT4 匯出",
   "ext_atr": -8.44,
   "created": "2026-11-27 10:05",
-  "max_r": 1.18,
+  "max_r": 1.2,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -1561,7 +1573,7 @@
   "source": "MT4 匯出",
   "ext_atr": -3.64,
   "created": "2026-11-27 00:34",
-  "max_r": 3.94,
+  "max_r": 4.03,
   "hit": "",
   "result": "到 3R",
   "done": false
