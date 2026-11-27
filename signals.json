@@ -53,7 +53,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.94,
   "created": "2026-11-27 20:05",
-  "max_r": 0.16,
+  "max_r": 1.92,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -110,7 +110,7 @@
   "source": "MT4 匯出",
   "ext_atr": -0.88,
   "created": "2026-11-27 20:05",
-  "max_r": 0.72,
+  "max_r": 1.11,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -396,7 +396,7 @@
   "source": "MT4 匯出",
   "ext_atr": 0.67,
   "created": "2026-11-27 12:05",
-  "max_r": 0.34,
+  "max_r": 0.86,
   "hit": "",
   "result": "進行中",
   "done": false
@@ -2636,9 +2636,9 @@
   "ext_atr": 1.58,
   "created": "2026-11-27 00:34",
   "max_r": 1.8,
-  "hit": "",
-  "result": "進行中",
-  "done": false
+  "hit": "2026-11-27 13:00",
+  "result": "停損",
+  "done": true
  },
  {
   "id": "AUDUSD_202611240800",
